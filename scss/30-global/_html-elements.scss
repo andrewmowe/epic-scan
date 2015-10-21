@@ -1,0 +1,51 @@
+body {
+  @include body-copy();
+}
+
+h1 {
+  @include h1();
+}
+
+h2 {
+	@include h2();
+}
+
+h3 {
+	@include h3();
+}
+
+h4 {
+	@include h4();
+}
+
+blockquote {
+  font-style: italic;
+  border-left: solid 3px $gray;
+  margin-left: $spacing;
+  padding-left: $spacing;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+	color: $color-link;
+	text-decoration: none;
+
+	&:hover {
+		color: $color-link-hover;
+		text-decoration: underline;
+	}
+}
+
+hr {
+	border: none;
+	border-bottom: 1px solid $color-secondary;
+	margin-bottom: 3em;
+
+	&.muted {
+		border-color: $gray-light;
+	}
+}

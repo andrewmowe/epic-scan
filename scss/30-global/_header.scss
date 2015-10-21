@@ -1,0 +1,58 @@
+.site-header {
+	position: static;
+	background-color: rgba($white, 0.95);
+	border-bottom: 1px solid $color-primary;
+
+	@include breakpoint($bp-md) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: z(navFixed);
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		padding: 0.625em 0;
+
+		@include breakpoint($bp-md) {
+			padding: 1.25em 0;
+			flex-wrap: nowrap;
+			flex-direction: row;
+		}
+	}
+
+	.client-login {
+		position: absolute;
+		right: 0;
+		bottom: -26px;
+
+		@include breakpoint($bp-md) {
+			bottom: auto;
+			top: 0;
+		}
+	}
+}
+
+.site-logo {
+
+	img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+// .header {
+//   position: relative;
+//   border-bottom: $border;
+//   @include breakpoint($bp--medium-up) {
+//     .search-form {
+//       position: absolute;
+//       top: $spacing;
+//       right: $spacing;
+//     }
+//   }
+// }

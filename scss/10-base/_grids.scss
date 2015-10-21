@@ -1,0 +1,15 @@
+$susy: (
+	columns: 12,
+	gutters: 1/4
+);
+
+.container {
+	@include container();
+	max-width: 1200px;
+	margin: 0 1em;
+	position: relative;
+
+	@include breakpoint($bp-xxl) {
+		margin: 0 auto;
+	}
+}

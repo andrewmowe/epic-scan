@@ -1,0 +1,128 @@
+// Reset button styles
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Make `a` like a button */
+[role="button"] {
+    color: inherit;
+    cursor: default;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: pre;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+// Our button mixin
+
+@mixin btn($color: $white, $bg: $color-primary, $inverse: false) {
+  color: $color;
+  background-color: $bg;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: $font-20;
+  font-weight: 200;
+  border: none;
+  padding: 9px 30px;
+  display: inline-block;
+
+  &:hover {
+    color: $color;
+    text-decoration: none;
+    background-color: darken($bg, 10%);
+  }
+
+  @if $inverse {
+    background-color: transparent;
+    border: 1px solid $bg;
+
+    &:hover {
+      color: darken($color, 10%);
+      text-decoration: none;
+      background-color: transparent;
+      border-color: darken($bg, 10%);
+    }
+  }
+}
+
+// Our buttons
+
+.btn {
+  @include btn();
+}
+
+.btn-secondary {
+  @include btn($white, $color-secondary);
+}
+
+.btn-inverse {
+  @include btn($color-primary, $color-primary, true);
+}
+
+.btn-client-type {
+  @include btn($color-primary, $white, true);
+}
+
+.btn-home-project {
+  @include btn($white, $color-primary, true);
+}
+
+.btn-read-more {
+  @include btn($color-primary, $color-primary, true);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  margin-bottom: $spacing;
+}
+
+// Login button
+.client-login {
+  font-size: $font-16;
+  line-height: 1.2;
+  color: $white;
+  background-color: $color-link;
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    background-color: $color-link-hover;
+  }
+}

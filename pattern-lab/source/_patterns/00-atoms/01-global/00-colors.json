@@ -1,0 +1,76 @@
+{
+  "colors": [
+    {
+      "name": "$limeade",
+      "value": "#77ba00"
+    },
+    {
+      "name": "$christi",
+      "value": "#6ba910"
+    },
+    {
+      "name": "$conifer",
+      "value": "#8dd95d"
+    },
+    {
+      "name": "$ecstasy",
+      "value": "#f98915"
+    },
+    {
+      "name": "$mango-tango",
+      "value": "#dc6a00"
+    },
+    {
+      "name": "$tan-hide",
+      "value": "#fba751"
+    },
+    {
+      "name": "$cerulean",
+      "value": "#00adef"
+    },
+    {
+      "name": "$astral",
+      "value": "#3d879a"
+    },
+    {
+      "name": "$viking",
+      "value": "#68b5d4"
+    },
+    {
+      "name": "$red",
+      "value": "#dd2b2b"
+    },
+    {
+      "name": "$purple",
+      "value": "#9e2171"
+    },
+    {
+      "name": "$yellow",
+      "value": "#ddba00"
+    },
+    {
+      "name": "$white",
+      "value": "#fff"
+    },
+    {
+      "name": "$gray-lightest",
+      "value": "#edeff0"
+    },
+    {
+      "name": "$gray-light",
+      "value": "#bbc3c5"
+    },
+    {
+      "name": "$gray",
+      "value": "#77868d"
+    },
+    {
+      "name": "$gray-dark",
+      "value": "#344762"
+    },
+    {
+      "name": "$black",
+      "value": "#000"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+// Some of the font families have to be renamed to use the proper one once we have the web font provider setup.
+$font-family-regular: 'Martel Sans', 'Lato', sans-serif;
+$font-family-alternate: 'Tisa Pro', sans-serif;
+
+html {
+	font-size: 14px;
+
+	@include breakpoint($bp-md) {
+		font-size: 16px;
+	}
+}
+
+// Font Sizes
+$font-16: 1em;
+$font-20: 1.25em;
+$font-23: 1.4375em;
+$font-35: 2.1875em;
+$font-40: 2.5em;

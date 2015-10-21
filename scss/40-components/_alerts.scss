@@ -1,0 +1,38 @@
+.news-alert {
+	background-color: $color-primary;
+	text-align: center;
+	padding: 1.5em 0;
+
+	.container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.alert-btn,
+	.alert-link {
+		display: inline-block;
+		vertical-align: middle;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.alert-btn {
+		background-color: $gray-dark;
+		padding: 9px 15px;
+		margin-right: 1.25em;
+
+		&:hover {
+			background-color: darken($gray-dark, 10%);
+		}
+	}
+
+	.alert-link {
+		color: $white;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $white;
+		}
+	}
+}
