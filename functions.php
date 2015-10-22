@@ -206,3 +206,18 @@ register_taxonomy(
         'hierarchical' => false
     )
 );
+
+register_taxonomy(
+    'clients',
+    'projects',
+    array(
+        'labels' => array(
+            'name' => 'Clients',
+            'add_new_item' => 'Add New Client',
+            'new_item_name' => "New mysqli_client_encoding()"
+        ),
+        'show_ui' => true,
+        'show_tagcloud' => false,
+        'hierarchical' => true
+    )
+);

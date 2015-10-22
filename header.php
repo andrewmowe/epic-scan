@@ -24,7 +24,7 @@
 
 	<header id="masthead" class="site-header cf" role="banner">
 		<div class="container">
-			<a class="site-logo" href="#"><img src="//placehold.it/375x85/" alt="Logo Alt Text" /></a>
+			<a class="site-logo" href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/images/epic-scan-logo.svg'; ?>" alt="Logo Alt Text" width="286" height="65" /></a>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav>
