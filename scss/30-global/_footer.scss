@@ -1,0 +1,58 @@
+// Footer mewsletter widget
+.footer-newsletter-signup {
+	padding-top: 5%;
+	padding-bottom: 7%;
+	text-align: center;
+	background-color: $color-primary;
+
+	h2 {
+		color: $gray-dark;
+	}
+}
+
+// Footer proper
+.site-footer {
+	padding-top: 2%;
+	padding-bottom: 5%;
+	background-color: $black;
+}
+
+	.footer-nav {
+
+		.menu-main-menu-container {
+			margin: 0 auto;
+
+			.menu {
+
+				a {
+					color: $color-link;
+
+					&:hover {
+						color: $color-link-hover;
+					}
+				}
+			}
+
+		}
+	}
+
+	.site-info {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		@include breakpoint($bp-md) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	.footer-contact-phone {
+		color: $gray-light;
+		font-size: $font-23;
+		text-transform: uppercase;
+
+		strong {
+			color: $color-primary;
+		}
+	}

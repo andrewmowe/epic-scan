@@ -110,7 +110,29 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		TESTIMONIAL - WIP
+			<section class="home-testimonial">
+				
+				<div class="container narrow">
+					
+					<h2>What our clients say</h2>
+					
+					<blockquote class="testimonial">
+						
+						<p>Epic Scan is both a talented and hard working designer. He is able produce at an impressive pace while maintaining the highest level of quality. As a manager, he holds himself to the highest and most ethical of standards. Epic Scan is an invaluable asset to any team.</p>
+					
+						<footer>
+
+							<span class="testimonial-name">Jerry Mosemak</span>
+							<span class="testimonial-role">Art Director</span>
+							<span class="testimonial-company">USA Today</span>
+
+						</footer>
+					
+					</blockquote>
+
+				</div>
+
+			</section>
 
 		<?php if( get_field('home_cta2_text') ) :
 
