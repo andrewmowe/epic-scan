@@ -159,6 +159,7 @@
 	.home-projects-contact {
 		max-width: 550px;
 		margin: 0 auto;
+	}
 
 		.projects-contact-title {
 			@include h3();
@@ -170,16 +171,19 @@
 		.projects-contact-phone,
 		.projects-contact-email {
 			display: block;
-			padding-left: 20%;
+			padding-left: 0;
 			color: $white;
 			font-size: $font-20;
 			line-height: 1.75;
+
+			@include breakpoint($bp-md) {
+				padding-left: 20%;
+			}
 
 			i {
 				padding-right: 10px;
 			}
 		}
-	}
 
 .home-news {
 	position: relative;

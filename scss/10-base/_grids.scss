@@ -9,8 +9,12 @@
 	}
 
 	&.narrow {
-		max-width: 960px;
-		margin-left: auto;
-		margin-right: auto;
+		max-width: 1040px;
+		margin-left: 1em;
+		margin-right: 1em;
+
+		@include breakpoint($bp-xl) {
+			margin: 0 auto;
+		}
 	}
 }

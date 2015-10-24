@@ -117,15 +117,15 @@ get_header(); ?>
 								<div class="team-member-contact">
 									
 									<?php if($email) : ?>
-										<a href="<?php echo $email; ?>" class="fa fa-envelope">e</a>
+										<a href="<?php echo $email; ?>" class="fa fa-envelope"></a>
 									<?php endif; ?>
 
 									<?php if($phone) : ?>
-										<a href="<?php echo $phone; ?>" class="fa fa-phone">f</a>
+										<a href="<?php echo $phone; ?>" class="fa fa-phone"></a>
 									<?php endif; ?>
 
 									<?php if($twitter) : ?>
-										<a href="//twitter.com/<?php echo $twitter; ?>" class="fa fa-envelope">g</a>
+										<a href="//twitter.com/<?php echo $twitter; ?>" class="fa fa-twitter"></a>
 									<?php endif; ?>
 
 								</div>

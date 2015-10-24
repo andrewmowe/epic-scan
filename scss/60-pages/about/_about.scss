@@ -55,7 +55,7 @@
 		}
 
 			.team-member-name {
-				padding: 14px 18px;
+				padding: 8px 18px 4px;
 				font-size: $font-23;
 				color: $white;
 				background-color: $gray-dark;
@@ -66,7 +66,7 @@
 				@include breakpoint($bp-md) {
 					display: inline-block;
 					vertical-align: middle;
-					margin-bottom: 0.5em;
+					margin-bottom: 0;
 				}
 			}
 
@@ -83,6 +83,7 @@
 					color: $gray-dark;
 					display: inline-block;
 					margin: 0 0.5em;
+					font-size: $font-23;
 
 					&:hover {
 						color: darken($gray-dark, 10%);
@@ -94,6 +95,11 @@
 			.team-member-bio {
 				text-align: left;
 				max-width: 700px;
+
+				@include breakpoint($bp-md) {
+					padding-top: 1em;
+					padding-left: 1em;
+				}
 			}
 
 				.team-member-title {
@@ -114,4 +120,15 @@
 	.project-cta-text {
 		color: $white;
 		font-size: 1.875em;
+	}
+
+	.project-contact {
+		text-align: left;
+		max-width: 500px;
+		margin: 0 auto;
+
+		.projects-contact-phone,
+		.projects-contact-email {
+			font-size: 1.75em;
+		}
 	}

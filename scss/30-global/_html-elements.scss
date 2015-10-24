@@ -18,6 +18,11 @@ h4 {
 	@include h4();
 }
 
+p {
+	margin-top: 0;
+	margin-bottom: 1.25em;
+}
+
 blockquote {
   font-style: italic;
   border-left: solid 3px $gray;
