@@ -39,11 +39,38 @@
 	.site-info {
 		display: flex;
 		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 
-		@include breakpoint($bp-md) {
+		@include breakpoint($bp-lg) {
+			flex-direction: row;
 			flex-wrap: nowrap;
+		}
+	}
+
+	.footer-social-links {
+		margin: 2em auto;
+		height: 48px;
+
+		@include breakpoint($bp-lg) {
+			margin: 0;
+		}
+
+		a {
+			display: inline-block;
+			margin: 0 5px;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			&:before {
+				font-size: 1.875em;
+				border: 1px solid;
+				height: auto;
+				padding: 10px;
+			}
 		}
 	}
 

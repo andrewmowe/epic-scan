@@ -110,6 +110,13 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		<?php if( get_field( 'home_testimonial' ) ) : ?>
+
+			<?php
+			$testimonial = get_field( 'home_testimonial' );
+			$t_id = $testimonial->ID;
+			?>
+
 			<section class="home-testimonial">
 				
 				<div class="container narrow">
@@ -118,13 +125,13 @@ get_header(); ?>
 					
 					<blockquote class="testimonial">
 						
-						<p>Epic Scan is both a talented and hard working designer. He is able produce at an impressive pace while maintaining the highest level of quality. As a manager, he holds himself to the highest and most ethical of standards. Epic Scan is an invaluable asset to any team.</p>
+						<p><?php the_field('test_quote', $t_id); ?></p>
 					
 						<footer>
 
-							<span class="testimonial-name">Jerry Mosemak</span>
-							<span class="testimonial-role">Art Director</span>
-							<span class="testimonial-company">USA Today</span>
+							<span class="testimonial-name"><?php the_field('test_name', $t_id); ?></span>
+							<span class="testimonial-role"><?php the_field('test_job_title', $t_id); ?></span>
+							<span class="testimonial-company"><?php the_field('test_company', $t_id); ?></span>
 
 						</footer>
 					
@@ -133,6 +140,8 @@ get_header(); ?>
 				</div>
 
 			</section>
+
+		<?php endif; ?>
 
 		<?php if( get_field('home_cta2_text') ) :
 
@@ -193,65 +202,79 @@ get_header(); ?>
 						
 						<span class="projects-contact-title">Let's discuss your project today.</span>
 
-						<span class="projects-contact-phone"><?php the_field('phone_number', 'option'); ?></span>
+						<span class="projects-contact-phone"><i class="fa fa-phone fa-fw"></i><?php the_field('phone_number', 'option'); ?></span>
 
-						<span class="projects-contact-email"><?php the_field('email_address', 'option'); ?></span>
+						<span class="projects-contact-email"><i class="fa fa-envelope fa-fw"></i><?php the_field('email_address', 'option'); ?></span>
 
 					</div>
 
 				</div>
 
 			</section>
+
+		<?php if( get_field('featured_news_posts') ) : ?>
 
 			<section class="home-news">
 				
 				<div class="container">
 					
-					<h2 class="home-news-title">Virtual News</h2>
+					<h2 class="home-news-title">
+						<?php if( get_field('featured_news_title') ) : ?>
+							<?php the_field('featured_news_title'); ?>
+						<?php else : ?>
+							Virtual News
+						<?php endif; ?>
+					</h2>
 
 					<div class="home-news-list">
+
+					<?php while( has_sub_field('featured_news_posts') ) :
+
+						// vars
+						$news = get_sub_field('featured_posts');
+						$news_title = $news->post_title;
+						$news_excerpt = wp_trim_words( $news->post_content, 30 );
+						$news_link = get_permalink($news->ID);
+
+			// echo '<pre>';
+			// print_r($news);
+			// echo '</pre>';
+
+						// images
+						if ( has_post_thumbnail($news->ID ) ) :
+							$thumbnail_id = get_post_thumbnail_id($news->ID);
+							$news_image = wp_get_attachment_image_src($thumbnail_id, 'large');
+						else :
+							$news_image = wp_get_attachment_image_src( get_field('placeholder_image', 'option'), 'large');
+						endif;
+
+						$image_url = $news_image[0];
+						$image_w = $news_image[1];
+						$image_h = $news_image[2];
+						$image_alt = $news_image[3];
+						?>
 						
 						<div class="home-news-item">
 							
-							<a href="#"><img class="home-news-item-img" src="//placehold.it/380x285" alt=""></a>
+							<a href="<?php echo $news_link; ?>"><img class="home-news-item-img" src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>"></a>
 
-							<a href="#"><h3 class="home-news-item-title">It starts with a vision</h3></a>
+							<a href="<?php echo $news_link; ?>"><h3 class="home-news-item-title"><?php echo $news_title; ?></h3></a>
 
-							<p class="home-news-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quis natus id, eum perspiciatis eaque expedita reprehenderit animi, modi assumenda atque aliquid ut explicabo odit maxime, cumque commodi doloribus eligendi.</p>
+							<p class="home-news-item-text"><?php echo $news_excerpt; ?></p>
 
-							<a href="#" class="btn btn-read-more">Read More</a>
-
-						</div>
-
-						<div class="home-news-item">
-							
-							<a href="#"><img class="home-news-item-img" src="//placehold.it/380x285" alt=""></a>
-
-							<a href="#"><h3 class="home-news-item-title">It starts with a vision</h3></a>
-
-							<p class="home-news-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quis natus id, eum perspiciatis eaque expedita reprehenderit animi, modi assumenda atque aliquid ut explicabo odit maxime, cumque commodi doloribus eligendi.</p>
-
-							<a href="#" class="btn btn-read-more">Read More</a>
+							<a href="<?php echo $news_link; ?>" class="btn btn-read-more">Read More</a>
 
 						</div>
 
-						<div class="home-news-item">
-							
-							<a href="#"><img class="home-news-item-img" src="//placehold.it/380x285" alt=""></a>
-
-							<a href="#"><h3 class="home-news-item-title">It starts with a vision</h3></a>
-
-							<p class="home-news-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quis natus id, eum perspiciatis eaque expedita reprehenderit animi, modi assumenda atque aliquid ut explicabo odit maxime, cumque commodi doloribus eligendi.</p>
-
-							<a href="#" class="btn btn-read-more">Read More</a>
-
-						</div>
+					<?php endwhile; ?>
 
 					</div>
 
 				</div>
 
 			</section>
+
+		<?php endif; ?>
 
 	<?php endwhile; // End of the loop. ?>
 

@@ -14,8 +14,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href='https://fonts.googleapis.com/css?family=Martel+Sans:400,200,700' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <?php wp_head(); ?>
+<script type="text/javascript" src="//cdn.rawgit.com/icons8/bower-webicon/v0.10.7/jquery-webicon.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

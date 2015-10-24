@@ -21,3 +21,15 @@
     content: map-get($font-icons, $icon-name);
   }
 }
+
+.twitter-text-replace {
+	@include icon(twitter, $text-replace: true);
+}
+
+.facebook-text-replace {
+	@include icon(facebook, $text-replace: true);
+}
+
+.linkedin-text-replace {
+	@include icon(linkedin, $text-replace: true);
+}

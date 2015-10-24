@@ -114,6 +114,10 @@ add_action( 'widgets_init', 'epic_scan_widgets_init' );
 function epic_scan_scripts() {
 	wp_enqueue_style( 'epic-scan-style', get_template_directory_uri() . '/css/style.css' );
 
+	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr-custom.js' );
+
 	wp_enqueue_script( 'epic-scan-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'epic-scan-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -165,59 +169,37 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 /**
- * ACF Options Pages
+ * Custom Post Types
  */
-register_post_type( 'projects',
+register_post_type( 'testimonials',
     array(
         'labels' => array(
-            'name' => 'Projects',
-            'singular_name' => 'Project',
+            'name' => 'Testimonials',
+            'singular_name' => 'Testimonial',
             'add_new' => 'Add New',
-            'add_new_item' => 'Add New Project',
+            'add_new_item' => 'Add New Testimonial',
             'edit' => 'Edit',
-            'edit_item' => 'Edit Project',
-            'new_item' => 'New Project',
+            'edit_item' => 'Edit Testimonial',
+            'new_item' => 'New Testimonial',
             'view' => 'View',
-            'view_item' => 'View Project',
-            'search_items' => 'Search Projects',
-            'not_found' => 'No Projects found',
-            'not_found_in_trash' => 'No Projects found in Trash',
-            'parent' => 'Parent Project'
+            'view_item' => 'View Testimonial',
+            'search_items' => 'Search Testimonials',
+            'not_found' => 'No Testimonials found',
+            'not_found_in_trash' => 'No Testimonials found in Trash',
+            'parent' => 'Parent Testimonial'
         ),
 
         'public' => true,
-        'menu_position' => 10,
-        'supports' => array( 'title', 'editor', 'comments', 'thumbnail' ),
-        'has_archive' => true
+        'menu_position' => 15,
+        'supports' => array( 'title' ),
     )
 );
 
-register_taxonomy(
-    'project_types',
-    'projects',
-    array(
-        'labels' => array(
-            'name' => 'Project Types',
-            'add_new_item' => 'Add New Project Type',
-            'new_item_name' => "New Project Type"
-        ),
-        'show_ui' => true,
-        'show_tagcloud' => false,
-        'hierarchical' => false
-    )
-);
+/**
+ * Custom read more
+ */
+function new_excerpt_more( $more ) {
+	return '&hellip;';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
-register_taxonomy(
-    'clients',
-    'projects',
-    array(
-        'labels' => array(
-            'name' => 'Clients',
-            'add_new_item' => 'Add New Client',
-            'new_item_name' => "New mysqli_client_encoding()"
-        ),
-        'show_ui' => true,
-        'show_tagcloud' => false,
-        'hierarchical' => true
-    )
-);

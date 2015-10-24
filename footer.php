@@ -50,7 +50,11 @@
 				<a class="site-logo" href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/images/epic-scan-logo.svg'; ?>" alt="Logo Alt Text" width="286" height="65" /></a>
 
 				<div class="footer-social-links">
-					WIP
+					
+					<a href="<?php echo get_field('facebook', 'option'); ?>" class="facebook-text-replace">Twitter</a>
+					<a href="<?php echo get_field('twitter', 'option'); ?>" class="twitter-text-replace">Twitter</a>
+					<a href="<?php echo get_field('linkedin', 'option'); ?>" class="linkedin-text-replace">Twitter</a>
+
 				</div>
 
 				<span class="footer-contact-phone">Call Today <strong><?php the_field('phone_number', 'option'); ?></strong></span>
