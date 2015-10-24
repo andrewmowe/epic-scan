@@ -1,8 +1,3 @@
-$susy: (
-	columns: 12,
-	gutters: 1/4
-);
-
 .container {
 	@include container();
 	max-width: 1200px;
@@ -13,7 +8,7 @@ $susy: (
 		margin: 0 auto;
 	}
 
-	.narrow {
+	&.narrow {
 		max-width: 960px;
 		margin-left: auto;
 		margin-right: auto;

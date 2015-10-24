@@ -47,7 +47,7 @@
 
 			<div class="site-info">
 				
-				<a class="site-logo" href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/images/epic-scan-logo.svg'; ?>" alt="Logo Alt Text" width="286" height="65" /></a>
+				<a class="site-logo" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/images/epic-scan-logo.svg'; ?>" alt="Logo Alt Text" width="286" height="65" /></a>
 
 				<div class="footer-social-links">
 					

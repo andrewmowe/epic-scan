@@ -1,0 +1,117 @@
+// About page styles
+.about-section {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+	.about-title {
+		color: $gray-dark;
+	}
+
+.about-team {
+	background-color: $viking;
+	padding-top: 5%;
+	padding-bottom: 6%;
+
+	h2 {
+		color: $gray-dark;
+		margin-bottom: 2em;
+
+		@include breakpoint($bp-md) {
+			margin-bottom: 3em;
+		}
+	}
+}
+
+	.team-member {
+		text-align: center;
+		margin-bottom: 1em;
+
+		@include breakpoint($bp-md) {
+			@include clearfix;
+			text-align: left;
+			margin-bottom: 2em;
+		}
+	}
+
+		.team-member-headshot {
+			display: inline-block;
+			border: 10px solid $gray-dark;
+			border-radius: 50%;
+			margin-bottom: 1em;
+
+			@include breakpoint($bp-md) {
+				@include span(2);
+				margin-top: -5%;
+			}
+		}
+
+		.team-member-info {
+			position: relative;
+
+			@include breakpoint($bp-md) {
+				@include span(10 last);
+			}
+		}
+
+			.team-member-name {
+				padding: 14px 18px;
+				font-size: $font-23;
+				color: $white;
+				background-color: $gray-dark;
+				text-transform: uppercase;
+				display: inline-block;
+				margin-bottom: 1em;
+
+				@include breakpoint($bp-md) {
+					display: inline-block;
+					vertical-align: middle;
+					margin-bottom: 0.5em;
+				}
+			}
+
+			.team-member-contact {
+				margin-bottom: 1em;
+
+				@include breakpoint($bp-md) {
+					display: inline-block;
+					vertical-align: middle;
+					margin-bottom: 0;
+				}
+
+				a {
+					color: $gray-dark;
+					display: inline-block;
+					margin: 0 0.5em;
+
+					&:hover {
+						color: darken($gray-dark, 10%);
+						text-decoration: none;
+					}
+				}
+			}
+
+			.team-member-bio {
+				text-align: left;
+				max-width: 700px;
+			}
+
+				.team-member-title {
+					font-size: $font-23;
+				}
+
+.project-cta {
+	background-color: $gray-dark;
+	padding-top: 5%;
+	padding-bottom: 6%;
+	text-align: center;
+
+	h2 {
+		color: $color-secondary;
+	}
+}
+
+	.project-cta-text {
+		color: $white;
+		font-size: 1.875em;
+	}

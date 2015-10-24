@@ -19,11 +19,11 @@ get_header(); ?>
 
 				<div class="hero-content">
 
-					<div class="container">
+					<div class="container narrow">
 
 						<h2 class="hero-title"><?php the_field('home_hero_title'); ?></h2>
 
-						<p class="hero-text narrow"><?php the_field('home_hero_text'); ?></p>
+						<p class="hero-text"><?php the_field('home_hero_text'); ?></p>
 
 						<a href="#" class="hero-learn-more">Learn more</a>
 
