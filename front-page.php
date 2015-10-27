@@ -13,7 +13,19 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php if( get_field('home_hero_video') ) : ?>
+		<?php if( get_field('home_hero_video') ) :
+
+			//vars
+			$home_video = get_field('home_hero_video');
+			?>
+
+			<script type="text/html" id="video-es">
+				<video class="hero-video" autoplay loop>
+
+					<source src="<?php echo $home_video; ?>" type="video/mp4">
+
+				</video>
+			</script>
 
 			<section class="hero home-hero">
 
@@ -33,11 +45,7 @@ get_header(); ?>
 
 				<div class="scrim-overlay"></div>
 
-				<video class="hero-video" autoplay loop>
-
-					<source src="<?php echo get_field('home_hero_video'); ?>" type="video/mp4">
-
-				</video>
+				<div id="target"></div>
 
 			</section>
 

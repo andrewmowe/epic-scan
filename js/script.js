@@ -1,10 +1,21 @@
 (function($, window, document) {
   "use strict";
 
-  if( $.browser.mobile ) {
-  	console.log('yes');
-  } else {
-  	console.log('no mobo');
-  }
+  $(document).ready(function() {
+	  var $target = $("#target"),
+	  		video = $("#video-es").html();
+
+	  if( $.browser.mobile ) {
+	  	var isMobile = true;
+	  } else {
+	  	var isMobile = false;
+	  	$target.html(video);
+	  }
+
+	  console.log(isMobile);
+
+	});
+
+
 
 }( window.jQuery, window, document ));
