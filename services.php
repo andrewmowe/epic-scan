@@ -58,47 +58,21 @@ get_header(); ?>
 				</div>
 			</section>
 
-		<?php if(get_field('about_text') ) :
+		<?php if ( have_rows('service_list') ) : ?>
 
-			// vars
-			$about_title = get_field('about_title');
-			$about_text = get_field('about_text');
-			?>
-
-			<section class="about-section">
-
-				<div class="container narrow">
-
-					<h2 class="about-title"><?php the_field('about_title'); ?></h2>
-
-					<div class="about-text"><?php echo apply_filters('the_content', $about_text); ?></div>
-
-				</div>
-
-			</section>
-
-		<?php endif; ?>
-
-		<?php if ( have_rows('team_members') ) : ?>
-
-			<section class="about-team">
+			<section class="service-list">
 				
-				<div class="container narrow">
+				<div class="container narrower">
 					
-					<h2 class="center">The Epic Scan Team</h2>
+					<h2 class="center"><?php the_field('service_list_title'); ?></h2>
 
-					<?php while ( have_rows('team_members') ) : the_row();
+					<?php while ( have_rows('service_list') ) : the_row();
 
 						// vars
-						$name = get_sub_field('team_name');
-						$title = get_sub_field('team_title');
-						$bio = get_sub_field('team_bio');
-						$email = get_sub_field('team_email');
-						$phone = get_sub_field('team_phone');
-						$twitter = get_sub_field('team_twitter');
+						$name = get_sub_field('service_name');
 
 						// image
-						$image_id = get_sub_field('team_headshot');
+						$image_id = get_sub_field('service_image');
 						$image = wp_get_attachment_image_src($image_id, 'thumbnail');
 						$image_url = $image[0];
 						$image_w = $image[1];
@@ -106,41 +80,11 @@ get_header(); ?>
 						$image_alt = $image[3];
 						?>
 
-						<div class="team-member">
+						<div class="service">
 							
-							<img class="team-member-headshot" src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
+							<img class="service-image" src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
 
-							<div class="team-member-info">
-
-								<span class="team-member-name"><?php echo $name; ?></span>
-
-								<div class="team-member-contact">
-									
-									<?php if($email) : ?>
-										<a href="<?php echo $email; ?>" class="fa fa-envelope"></a>
-									<?php endif; ?>
-
-									<?php if($phone) : ?>
-										<a href="<?php echo $phone; ?>" class="fa fa-phone"></a>
-									<?php endif; ?>
-
-									<?php if($twitter) : ?>
-										<a href="//twitter.com/<?php echo $twitter; ?>" class="fa fa-twitter"></a>
-									<?php endif; ?>
-
-								</div>
-
-								<div class="team-member-bio">
-									
-									<span class="team-member-title"><?php echo $title; ?></span>
-
-									<?php if($bio) : ?>
-										<?php echo apply_filters('the_content', $bio); ?>
-									<?php endif; ?>
-
-								</div>
-
-							</div>
+							<span class="service-name btn"><?php echo $name; ?></span>
 
 						</div>
 

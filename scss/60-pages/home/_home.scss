@@ -15,9 +15,7 @@
 }
 
 	.home-cta-text {
-		font-size: $font-35;
-		line-height: 1.4;
-		text-transform: uppercase;
+		@include h2();
 		color: $gray-dark;
 		margin-bottom: 4rem;
 

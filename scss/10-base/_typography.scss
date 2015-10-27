@@ -3,23 +3,39 @@
 }
 
 @mixin h1() {
-  font-size: $font-40;
+  font-size: 1.5em;
   line-height: 1.2;
   font-weight: 200;
   text-transform: uppercase;
   display: block;
   margin-top: 0;
   margin-bottom: 6%;
+
+  @include breakpoint($bp-sm) {
+    font-size: 2em;
+  }
+
+  @include breakpoint($bp-md) {
+    font-size: $font-40;
+  }
 }
 
 @mixin h2() {
-  font-size: $font-35;
+  font-size: 1.35em;
   line-height: 1.2;
   font-weight: 200;
   text-transform: uppercase;
   display: block;
   margin-top: 0;
   margin-bottom: 5%;
+
+  @include breakpoint($bp-sm) {
+    font-size: 1.75em;
+  }
+
+  @include breakpoint($bp-md) {
+    font-size: $font-35;
+  }
 }
 
 @mixin h3() {

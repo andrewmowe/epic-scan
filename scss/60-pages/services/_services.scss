@@ -1,0 +1,81 @@
+.service-list {
+	padding-top: 4em;
+	padding-bottom: 5em;
+
+	h2 {
+		color: $gray-dark;
+		margin-bottom: 4em;
+	}
+}
+
+	.service {
+		position: relative;
+		margin-bottom: 2em;
+		text-align: center;
+
+		@include breakpoint($bp-md) {
+			margin-bottom: 0;
+
+			&:nth-child(even) {
+
+				.service-image {
+					left: auto;
+					right: 0;
+				}
+
+				.service-name {
+
+					&:before {
+						left: auto;
+						right: -50px;
+					}
+				}
+			}
+
+			&:nth-child(odd) {
+			}
+		}
+	}
+
+		.service-image {
+			border-radius: 50%;
+			border: 10px solid $color-primary;
+			margin: 0 auto 1em;
+
+			@include breakpoint($bp-md) {
+				position: absolute;
+				left: 0;
+				top: -58px;
+				z-index: z(contentTop);
+			}
+		}
+
+		.service-name {
+			width: 85%;
+			display: block;
+			margin: 0 auto 1em;
+			position: relative;
+
+			&:hover {
+				background-color: $color-primary;
+			}
+
+			@include breakpoint($bp-sm) {
+				width: 70%;
+			}
+
+			@include breakpoint($bp-md) {
+				width: 50%;
+				margin: 0 auto 3em;
+
+				&:before {
+					content: "";
+					position: absolute;
+					height: 10px;
+					width: 50px;
+					background-color: $color-primary;
+					top: 22px;
+					left: -50px;
+				}
+			}
+		}

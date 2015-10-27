@@ -94,7 +94,7 @@ get_header(); ?>
 						$title = get_sub_field('team_title');
 						$bio = get_sub_field('team_bio');
 						$email = get_sub_field('team_email');
-						$phone = get_sub_field('team_phone');
+						$linkedin = get_sub_field('team_linkedin');
 						$twitter = get_sub_field('team_twitter');
 
 						// image
@@ -117,11 +117,11 @@ get_header(); ?>
 								<div class="team-member-contact">
 									
 									<?php if($email) : ?>
-										<a href="<?php echo $email; ?>" class="fa fa-envelope"></a>
+										<a href="mailto:<?php echo $email; ?>" class="fa fa-envelope"></a>
 									<?php endif; ?>
 
-									<?php if($phone) : ?>
-										<a href="<?php echo $phone; ?>" class="fa fa-phone"></a>
+									<?php if($linkedin) : ?>
+										<a href="<?php echo $linkedin; ?>" class="fa fa-linkedin"></a>
 									<?php endif; ?>
 
 									<?php if($twitter) : ?>

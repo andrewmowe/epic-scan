@@ -17,4 +17,14 @@
 			margin: 0 auto;
 		}
 	}
+
+	&.narrower {
+		max-width: 800px;
+		margin-left: 1em;
+		margin-right: 1em;
+
+		@include breakpoint(800px) {
+			margin: 0 auto;
+		}
+	}
 }

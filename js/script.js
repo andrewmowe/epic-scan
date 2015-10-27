@@ -1,13 +1,10 @@
-(function($, Drupal, undefined) {
+(function($, window, document) {
   "use strict";
 
-  // A demo Drupal behavior
-  Drupal.behaviors.customBehavior = {
-    attach: function(context, settings) {
-      //$('body', context).prepend('Demo drupal behavior in js/script.js');
-      console.log('Drupal behavior from js/script.js');
-    }
-  };
+  if( $.browser.mobile ) {
+  	console.log('yes');
+  } else {
+  	console.log('no mobo');
+  }
 
-
-})(jQuery, Drupal);
+}( window.jQuery, window, document ));
