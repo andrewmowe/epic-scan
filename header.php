@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <?php wp_head(); ?>
 <script type="text/javascript" src="//cdn.rawgit.com/icons8/bower-webicon/v0.10.7/jquery-webicon.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

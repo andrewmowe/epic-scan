@@ -29,7 +29,7 @@ get_header(); ?>
 			$image_alt = $image[3];
 			?>
 
-			<section class="hero page-hero">
+			<section class="hero page-hero" style="background-image: url(<?php echo $image_url; ?>);">
 
 				<div class="hero-content">
 
@@ -44,8 +44,6 @@ get_header(); ?>
 				</div>
 
 				<div class="scrim-overlay"></div>
-
-				<img class="hero-image" src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
 
 			</section>
 

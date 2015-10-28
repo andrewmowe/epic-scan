@@ -79,3 +79,41 @@
 				}
 			}
 		}
+
+	.services-quote {
+		background-color: $color-primary;
+		padding-top: 4em;
+		padding-bottom: 5em;
+		color: $white;
+		text-align: center;
+
+		@include breakpoint($bp-md) {
+			text-align: left;
+
+			.container {
+				display: flex;
+			}
+		}
+	}
+
+		.quote-image {
+			flex-shrink: 0;
+
+			@include breakpoint($bp-md) {
+				margin-right: 1.25em;
+			}
+
+			img {
+				border-radius: 50%;
+				border: 10px solid $white;
+				display: inline-block;			
+			}
+		}
+
+		.quote-attr {
+			display: block;
+
+			@include breakpoint($bp-md) {
+				text-align: right;
+			}
+		}

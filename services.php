@@ -29,7 +29,7 @@ get_header(); ?>
 			$image_alt = $image[3];
 			?>
 
-			<section class="hero page-hero">
+			<section class="hero page-hero" style="background-image: url(<?php echo $image_url; ?>);">
 
 				<div class="hero-content">
 
@@ -44,8 +44,6 @@ get_header(); ?>
 				</div>
 
 				<div class="scrim-overlay"></div>
-
-				<img class="hero-image" src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
 
 			</section>
 
@@ -96,23 +94,35 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		<?php if( get_field('project_cta_title') ) : ?>
+		<?php if( get_field('quote') ) :
+			// vars
+			$quote = get_field('quote');
+			$quote_attr = get_field('quote_attr');
 
-			<section class="project-cta">
+			// image
+			$image_id = get_field('quote_image');
+			$image = wp_get_attachment_image_src($image_id, 'thumbnail');
+			$image_url = $image[0];
+			$image_w = $image[1];
+			$image_h = $image[2];
+			$image_alt = $image[3];
+			?>
+
+			<section class="services-quote">
 				
-				<div class="container narrow">
-					
-					<h2><?php the_field('project_cta_title'); ?></h2>
-					
-					<p class="project-cta-text"><?php the_field('project_cta_text'); ?></p>
-					
-					<hr>
+				<div class="container narrower">
+										
+					<?php if($image_id) : ?>
+						<div class="quote-image">
+						<img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
+						</div>
+					<?php endif; ?>
 
-					<div class="project-contact">
-						
-						<span class="projects-contact-phone"><i class="fa fa-phone fa-fw"></i><?php the_field('phone_number', 'option'); ?></span>
+					<div>
 
-						<span class="projects-contact-email"><i class="fa fa-envelope fa-fw"></i><?php the_field('email_address', 'option'); ?></span>
+					<p class="quote-text"><?php echo $quote; ?></p>
+
+					<p class="quote-attr"><?php echo $quote_attr; ?></p>
 
 					</div>
 
