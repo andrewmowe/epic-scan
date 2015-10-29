@@ -117,3 +117,140 @@
 				text-align: right;
 			}
 		}
+
+.services-process {
+	background-size: cover;
+	padding-top: 5em;
+	padding-bottom: 6em;
+	position: relative;
+
+	.container {
+		z-index: z(content);
+	}
+}
+
+	.bim-process-title {
+		font-size: 3em;
+		color: $white;
+		font-weight: bolder;
+		text-align: center;
+		margin-bottom: 0;
+
+		@include breakpoint($bp-md) {
+			font-size: 5.625em;
+		}
+	}
+
+	.bim-process-subtitle {
+		@include h2();
+		text-transform: none;
+		text-align: center;
+		color: $gray-dark;
+	}
+
+	.steps {
+		text-align: left;
+
+		@include breakpoint($bp-md) {
+			text-align: center;
+		}
+	}
+
+		.step {
+			position: relative;
+			margin-bottom: 2em;
+
+			@include breakpoint($bp-md) {
+				&:nth-child(even) {
+			    .step-text {
+			      left: auto;
+			      right: 0;
+			      padding-left: 10vw;
+			      padding-right: 1em;
+
+			      @include breakpoint($bp-lg) {
+			      	padding-left: 10%;
+			      	padding-right: 2em;
+			      }
+
+			      span {
+			      	text-align: right;
+			      }
+			    }
+			  }
+			}
+		}
+
+			.step-icon {
+			  color: #68b5d4;
+			  background-color: #fff;
+			  padding: 1.1em;
+			  border-radius: 50%;
+			  height: 5em;
+			  width: 5em;
+			  border: 6px solid #68b5d4;
+
+			  @include breakpoint($bp-md) {
+			  	width: 20vw;
+			  	height: 20vw;
+			  	padding: 2.5em;
+			  	display: flex;
+			  	margin: 0 auto;
+			  	justify-content: center;
+			  	align-items: center;
+			  }
+
+			  @include breakpoint($bp-lg) {
+			  	width: 160px;
+			  	height: 160px;
+			  }
+			  
+			  &:before {
+			    font-size: 2em;
+
+			    @include breakpoint($bp-md) {
+			    	font-size: 8vw;
+			    }
+
+			    @include breakpoint($bp-lg) {
+			    	font-size: 4em;
+			    }
+			  }
+			}
+
+			.step-text {
+				position: absolute;
+				height: 80%;
+				background-color: $gray-dark;
+				width: 90%;
+				top: 10%;
+				left: 10%;
+				right: auto;
+				z-index: -1;
+				border-right: 10px solid $white;
+				color: $white;
+				line-height: 1.2;
+				text-align: left;
+				display: flex;
+				align-items: center;
+				padding-left: 50px;
+
+				@include breakpoint($bp-md) {
+					width: 50%;
+					left: 0;
+					right: auto;
+					border-left: 10px solid $white;
+					padding-left: 1em;
+					padding-right: 10vw;
+				}
+
+				@include breakpoint($bp-lg) {
+					padding-right: 10%;
+					padding-left: 2em;
+				}
+
+				span {
+					display: block;
+					width: 100%;
+				}
+			}

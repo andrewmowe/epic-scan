@@ -132,6 +132,58 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		<?php if( have_rows('process_steps') ) :
+
+			// vars
+			$subtitle = get_field('subtitle');
+
+			// image
+			$image_id = get_field('bim_background_image');
+			$image = wp_get_attachment_image_src($image_id, 'full');
+			$image_url = $image[0];
+			$image_w = $image[1];
+			$image_h = $image[2];
+			$image_alt = $image[3];
+			?>
+
+			<section class="services-process" style="background-image: url(<?php echo $image_url; ?>);">
+				
+				<div class="scrim-overlay blue-overlay"></div>
+
+				<div class="container narrower">
+					
+					<h2 class="bim-process-title">BIM Process</h2>
+
+					<span class="bim-process-subtitle"><?php the_field('subtitle'); ?></span>
+
+					<div class="steps">
+
+					<?php while( have_rows('process_steps') ) : the_row();
+
+						// vars
+						$icon_class = get_sub_field('step_icon');
+						$step_text = get_sub_field('step_text');
+						?>
+
+						<div class="step">
+
+							<div class="step-icon fa fa-<?php echo $icon_class; ?>"></div>
+
+							<div class="step-text">
+								<span><?php echo $step_text; ?></span>
+							</div>
+
+						</div>
+
+					<?php endwhile; ?>
+
+					</div>
+
+				</div>
+			</section>
+
+		<?php endif; ?>
+
 	<?php endwhile; // End of the loop. ?>
 
 	</main><!-- #main -->

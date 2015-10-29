@@ -29,6 +29,7 @@
 		position: absolute;
 		right: 0;
 		bottom: -26px;
+		z-index: z(navFixed);
 
 		@include breakpoint($bp-md) {
 			bottom: auto;

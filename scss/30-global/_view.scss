@@ -18,4 +18,9 @@
 		background-color: $gray-dark;
 		background-color: rgba($gray-dark, 0.9);
 	}
+
+	&.blue-overlay {
+		background-color: $viking;
+		background-color: rgba($viking, 0.8);
+	}
 }
