@@ -3,7 +3,7 @@
 	background-color: rgba($white, 0.95);
 	border-bottom: 1px solid $color-primary;
 
-	@include breakpoint($bp-md) {
+	@include breakpoint(800px) {
 		position: fixed;
 		top: 0;
 		left: 0;

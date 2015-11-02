@@ -1,0 +1,48 @@
+.blog-header {
+	background-color: $gray-lightest;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+
+	@include breakpoint(800px) {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-top: 106px;
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+		margin: 5px 10px;
+	}
+
+	a {
+		color: $gray-dark;
+		text-transform: uppercase;
+
+		&:hover {
+			color: darken($gray-dark, 10%);
+			text-decoration: none;
+		}
+	}
+
+	.architects a {
+		border-bottom: 2px solid $color-architects;
+	}
+
+	.engineers a {
+		border-bottom: 2px solid $color-engineers;
+	}
+
+	.contractors a {
+		border-bottom: 2px solid $color-contractors;
+	}
+
+	.developers a {
+		border-bottom: 2px solid $color-developers;
+	}
+
+	.owners a {
+		border-bottom: 2px solid $color-owners;
+	}
+}

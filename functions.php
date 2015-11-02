@@ -43,6 +43,7 @@ function epic_scan_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'epic-scan' ),
+		'categories' => esc_html__( 'Category Menu', 'epic-scan' )
 	) );
 
 	/*
@@ -207,3 +208,12 @@ function new_excerpt_more( $more ) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+/**
+ * Don't show Projects category in main blogroll
+ */
+function exclude_projects( $query ) {
+	if ( $query->is_home() && $query->is_main_query() ) {
+		$query->set( 'cat', '-15' );
+	}
+}
+add_action( 'pre_get_posts', 'exclude_projects' );
