@@ -16,6 +16,10 @@
   margin: -1px; padding: 0; border: 0; 
 }
 
+.screen-reader-text {
+  @extend .visuallyhidden;
+}
+
 %center {
   text-align: center;
 }

@@ -7,14 +7,19 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area container">
+		<main id="main" class="site-main blog-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
+			<?php the_post_navigation(
+				array(
+						'prev_text' => '<span class="prev-pretext">< Previous Post</span><br>%title',
+						'next_text' => '<span class="next-pretext">Next Post ></span><br>%title'
+					)
+			); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -26,7 +31,9 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+		
+		<?php get_sidebar(); ?>
+	
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

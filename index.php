@@ -13,21 +13,21 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<?php if ( is_home() && ! is_front_page() ) : ?>
+		<nav class="blog-header">
+			<div class="container">
+				<?php wp_nav_menu( array( 'theme_location' => 'categories', 'menu_id' => 'category-menu' ) ); ?>
+			</div>
+		</nav>
+	<?php endif; ?>
+
+	<div id="primary" class="content-area container">
+		<main id="main" class="site-main blog-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<nav class="blog-header">
-					<div class="container">
-						<?php wp_nav_menu( array( 'theme_location' => 'categories', 'menu_id' => 'category-menu' ) ); ?>
-					</div>
-				</nav>
-			<?php endif; ?>
-
 			<header>
-				<h2>News</h2>
+				<h2 class="blog-title">News</h2>
 			</header>
 
 			<?php /* Start the Loop */ ?>
@@ -45,7 +45,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php the_posts_pagination(); ?>
 
 		<?php else : ?>
 
@@ -54,7 +54,9 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+
+		<?php get_sidebar(); ?>
+
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

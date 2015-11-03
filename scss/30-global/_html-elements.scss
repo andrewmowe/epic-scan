@@ -35,6 +35,11 @@ img {
   height: auto;
 }
 
+figure {
+	max-width: 100%;
+	margin: 0;
+}
+
 a {
 	color: $color-link;
 	text-decoration: none;
@@ -55,7 +60,16 @@ hr {
 	}
 }
 
+label {
+	display: block;
+}
+
 input {
 	padding: 9px 30px;
 	text-transform: uppercase;
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
 }

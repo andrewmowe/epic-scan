@@ -80,7 +80,8 @@ button::-moz-focus-inner {
 
 // Our buttons
 
-.btn {
+.btn,
+input.btn {
   @include btn();
 }
 
