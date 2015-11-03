@@ -1,0 +1,29 @@
+.comments-title {
+	text-transform: none;
+
+	span {
+		text-transform: uppercase;
+		color: $color-primary;
+	}
+}
+
+.comment-list,
+.comment-list ul {
+	list-style-type: none;
+}
+
+.comment-body {
+	margin-bottom: 2em;
+
+	.avatar {
+		float: left;
+		margin-right: 1.25em;
+	}
+}
+
+.comment-submit {
+	float: right;
+	display: inline-block;
+	width: auto;
+	background-color: $color-primary;
+}

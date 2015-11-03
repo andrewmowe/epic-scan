@@ -1,0 +1,178 @@
+// Styles for posts in different contexts
+.blog-title {
+	color: $color-primary;
+	border-bottom: 2px solid $gray-lightest;
+}
+
+.single-post {
+
+	.site-content {
+
+		@include breakpoint($bp-md) {
+			margin-top: 126px;
+		}
+	}
+
+	.entry-title {
+		color: $color-primary;
+	}
+
+	.post-navigation {
+		margin-bottom: 3em;
+		@include clearfix;
+	}
+
+	.nav-previous,
+	.nav-next {
+		font-size: 1.5em;
+
+		@include breakpoint($bp-lg) {
+			@include span(4.5 of 9);
+		}
+	}
+
+	.nav-next {
+
+		@include breakpoint($bp-md) {
+			text-align: right;
+			@include span(last);
+		}
+	}
+
+	.prev-pretext,
+	.next-pretext {
+		color: $gray;
+		font-size: 1rem;
+	}
+}
+
+.hentry {
+	@include clearfix;
+	margin-bottom: 2em;
+}
+
+.post-thumbnail {
+	padding-bottom: 4px;
+
+	.blog-main & {
+		padding-bottom: 4px;
+		border-bottom: 6px solid;
+
+		@include breakpoint($bp-lg) {
+			@include span(4 of 9);
+		}
+	}
+
+	.category-contractors & {
+		border-color: $color-contractors;
+	}
+
+	.category-engineers & {
+		border-color: $color-engineers;
+	}
+
+	.category-architects & {
+		border-color: $color-architects;
+	}
+
+	.category-developers & {
+		border-color: $color-developers;
+	}
+
+	.category-owners & {
+		border-color: $color-owners;
+	}
+}
+
+.entry-wrap {
+
+	.blog-main .has-post-thumbnail {
+
+		@include breakpoint($bp-lg) {
+			@include span(5 of 9);
+		}
+	}
+}
+
+.cat-links {
+	text-transform: uppercase;
+	color: $gray;
+
+	a {
+		color: $gray;
+
+		&:hover {
+			color: $gray-dark;
+		}
+	}
+
+	.category-contractors & a {
+		color: $color-contractors;
+
+		&:hover {
+			color: darken($color-contractors, 10%);
+		}
+	}
+
+	.category-architects & a {
+		color: $color-architects;
+
+		&:hover {
+			color: darken($color-architects, 10%);
+		}
+	}
+
+	.category-engineers & a {
+		color: $color-engineers;
+
+		&:hover {
+			color: darken($color-engineers, 10%);
+		}
+	}
+
+	.category-developers & a {
+		color: $color-developers;
+
+		&:hover {
+			color: darken($color-developers, 10%);
+		}
+	}
+
+	.category-owners & a {
+		color: $color-owners;
+
+		&:hover {
+			color: darken($color-owners, 10%);
+		}
+	}	
+}
+
+.tags-links {
+	text-transform: uppercase;
+	color: $gray;
+
+	a {
+		color: $gray;
+
+		&:hover {
+			color: $gray-dark;
+		}
+	}
+}
+
+.entry-title {
+	margin: 0.25em 0;
+}
+
+.posted-on {
+	text-transform: uppercase;
+	color: $gray-light;
+}
+
+.entry-content {
+	margin: 0.5em 0;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,10 @@
+// Styles for the <main> section
+
+// Blog main section
+.blog-main {
+	@include span(full);
+
+	@include breakpoint($bp-lg) {
+		@include span(9);
+	}
+}

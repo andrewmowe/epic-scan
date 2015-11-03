@@ -1,0 +1,8 @@
+// Sidebar styles
+.widget-area {
+	@include span(full);
+
+	@include breakpoint($bp-lg) {
+		@include span(3 last);
+	}
+}
