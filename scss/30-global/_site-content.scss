@@ -1,0 +1,19 @@
+// Main content section
+
+.site-content {
+
+	@include breakpoint(800px) {
+		margin-top: 106px;
+		padding-top: 20px;
+
+		.page-template & {
+			margin-top: 0;
+			padding-top: 0; 
+		}
+
+		.blog &,
+		.category-projects & {
+			padding-top: 0;
+		}
+	}
+}

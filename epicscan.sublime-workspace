@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"tex",
+				"text-align"
+			],
+			[
+				"proje",
+				"project_cat"
+			],
+			[
+				"alig",
+				"align-items: "
+			],
+			[
+				"ali",
+				"align-content: "
+			],
+			[
+				"detect",
+				"detectmobile"
+			],
+			[
+				"proj",
+				"project_cta_title"
+			],
+			[
+				"box",
+				"box-sizing: "
+			],
+			[
+				"test",
+				"testimonial"
+			],
+			[
+				"Test",
+				"Testimonial"
+			],
+			[
+				"no-",
+				"no-repeat"
+			],
+			[
+				"cli",
+				"client_image"
+			],
+			[
+				"paddin",
+				"padding-bottom: "
+			],
+			[
+				"home_cl",
+				"home_client_types_clients"
+			],
+			[
+				"php",
+				"php"
+			],
+			[
 				"mark",
 				"markdown-toc"
 			],
@@ -288,10 +344,6 @@
 				"size_container_width"
 			],
 			[
-				"paddin",
-				"padding-top"
-			],
-			[
 				"trans",
 				"transform"
 			],
@@ -462,84 +514,24 @@
 			[
 				"goal--d",
 				"goal--description--edit"
-			],
-			[
-				"goal--du",
-				"goal--due-date--edit"
-			],
-			[
-				"tran",
-				"transform-origin"
-			],
-			[
-				"edit",
-				"edit-input"
-			],
-			[
-				"save",
-				"saveAction"
-			],
-			[
-				"lin",
-				"line-through"
-			],
-			[
-				"task--",
-				"task--details"
-			],
-			[
-				"com",
-				"complementary-color-darker"
-			],
-			[
-				"acce",
-				"accent-color-darker"
-			],
-			[
-				"secon",
-				"secondary-color-darker"
-			],
-			[
-				"main-var",
-				"main-var-color-darkest"
-			],
-			[
-				"main-",
-				"main-default-color"
-			],
-			[
-				"br",
-				"browserSync"
-			],
-			[
-				"backgrou",
-				"background-size"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "pattern-lab/source/_patterns/02-organisms/00-global/00-header.mustache",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 162,
+				"buffer_size": 1584,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "pattern-lab/source/_patterns/00-atoms/04-images/00-logo.mustache",
+			"file": "category.php",
 			"settings":
 			{
-				"buffer_size": 103,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pattern-lab/source/_patterns/01-molecules/05-navigation/00-primary-nav.mustache",
-			"settings":
-			{
-				"buffer_size": 544,
+				"buffer_size": 1244,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,15 +539,23 @@
 			"file": "header.php",
 			"settings":
 			{
-				"buffer_size": 1586,
+				"buffer_size": 1855,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "functions.php",
+			"file": "single.php",
 			"settings":
 			{
-				"buffer_size": 4289,
+				"buffer_size": 911,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "comments.php",
+			"settings":
+			{
+				"buffer_size": 2893,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,79 +563,15 @@
 			"file": "scss/00-config/_fonts.scss",
 			"settings":
 			{
-				"buffer_size": 346,
+				"buffer_size": 476,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scss/30-global/_header.scss",
+			"file": "template-parts/content-single.php",
 			"settings":
 			{
-				"buffer_size": 489,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "node_modules/susy/sass/susy/language/susyone/_media.scss",
-			"settings":
-			{
-				"buffer_size": 3474,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pattern-lab/source/_patterns/00-atoms/00-meta/_00-head.mustache",
-			"settings":
-			{
-				"buffer_size": 1251,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "grunt-tasks/pattern-lab/pattern-lab.js",
-			"settings":
-			{
-				"buffer_size": 5864,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/10-base/_typography.scss",
-			"settings":
-			{
-				"buffer_size": 399,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/00-config/_colors.scss",
-			"settings":
-			{
-				"buffer_size": 696,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/60-pages/_styleguide-specific.scss",
-			"settings":
-			{
-				"buffer_size": 3594,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/00-config/_settings.scss",
-			"settings":
-			{
-				"buffer_size": 106,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "style.css",
-			"settings":
-			{
-				"buffer_size": 14878,
+				"buffer_size": 640,
 				"line_ending": "Unix"
 			}
 		},
@@ -643,81 +579,15 @@
 			"file": "scss/30-global/_html-elements.scss",
 			"settings":
 			{
-				"buffer_size": 530,
+				"buffer_size": 763,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "node_modules/bourbon/app/assets/stylesheets/addons/_buttons.scss",
+			"file": "scss/40-components/_comments.scss",
 			"settings":
 			{
-				"buffer_size": 1715,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 28 files for \"$color--primary\"\n\n/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_btn.scss:\n    1  @mixin btn($alt: false) {\n    2:   background: $color--primary;\n    3    padding: ($spacing / 4) ($spacing / 2);\n    4    display: inline-block;\n    .\n    7    @if $alt {\n    8      background: $color--gray--white;\n    9:     color: $color--primary;\n   10    }\n   11  }\n\n2 matches in 1 file\n\n\nSearching 28 files for \"@mixin h1\"\n\n/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/10-base/_typography.scss:\n    3  }\n    4  \n    5: @mixin h1() {\n    6    font-family: $font-family-regular;\n    7  }\n\n1 match in 1 file\n",
-			"settings":
-			{
-				"buffer_size": 691,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "scss/40-components/_btn.scss",
-			"settings":
-			{
-				"buffer_size": 1926,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/10-base/_grids.scss",
-			"settings":
-			{
-				"buffer_size": 92,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/40-components/_primary-nav.scss",
-			"settings":
-			{
-				"buffer_size": 475,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/00-config/_breakpoints.scss",
-			"settings":
-			{
-				"buffer_size": 917,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/00-config/_utilities.scss",
-			"settings":
-			{
-				"buffer_size": 113,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "node_modules/breakpoint-sass/stylesheets/_breakpoint.scss",
-			"settings":
-			{
-				"buffer_size": 2631,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/50-templates/_grid.scss",
-			"settings":
-			{
-				"buffer_size": 1032,
+				"buffer_size": 515,
 				"line_ending": "Unix"
 			}
 		}
@@ -860,25 +730,91 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan"
+		"/Users/administrator/MOWE/andrewmowe.github.io"
 	],
 	"file_history":
 	[
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/header.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/inc/template-tags.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/functions.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/js/script.js",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/js/detectmobilebrowser.js",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/60-pages/page/_hero.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_fonts.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/10-base/_typography.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/twentyfifteen/style.css",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_wordpress-classes.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_comments.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_btn.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/50-templates/_post.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_category-nav.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_primary-nav.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_post-nav.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_sidebar.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_main-section.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/_all-partials.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/60-pages/home/_home-hero.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/60-pages/about/_about.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_utilities.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_view.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_settings.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_html-elements.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_search-form.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/template-parts/content.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_breakpoints.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_icons-application.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/footer.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/front-page.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/about.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_z-index.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/services.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_colors.scss",
+		"/Users/administrator/Downloads/wptest-master/README.md",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_icons.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/10-base/_icons-base.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_footer.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/60-pages/home/_home.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/60-pages/services/_services.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_header.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/node_modules/grunt-sass-globbing/test/fixtures/partials/_post.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/10-base/_grids.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/00-atoms/02-text/00-headings.mustache",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/50-templates/_grid.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/node_modules/breakpoint-sass/stylesheets/_breakpoint.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/50-templates/_layout--content.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/node_modules/susy/sass/susy/language/susyone/_media.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/00-atoms/00-meta/_00-head.mustache",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/grunt-tasks/pattern-lab/pattern-lab.js",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab-assets.yml",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/60-pages/_styleguide-specific.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/node_modules/bourbon/app/assets/stylesheets/addons/_buttons.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_alerts.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/node_modules/singularitygs/stylesheets/singularitygs/helpers/_layout.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_node-teaser.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/style.css",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/css/style.css",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/02-organisms/00-global/00-header.mustache",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/02-organisms/03-sections/03-home-hero.mustache",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/02-organisms/03-sections/04-news-alert.mustache",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/00-atoms/04-images/00-logo.mustache",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/00-atoms/05-buttons/02-login.mustache",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/01-molecules/05-navigation/00-primary-nav.mustache",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/page.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/template-parts/content-page.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/Gruntfile.js",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_home-hero.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/03-templates/00-homepage.mustache",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/node_modules/breakpoint-sass/tests/tests/_variables.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_menu.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/Gruntconfig.yml",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/config/config.ini",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/style.scss",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/Gruntfile.js",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/node_modules/grunt-pattern-lab-component-builder/templates/colors.mustache",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/00-atoms/01-global/00-colors.json",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/grunt-tasks/pattern-lab/pattern-lab.js",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_fonts.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/00-atoms/02-text/03-inline-elements.mustache",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/00-atoms/02-text/06-hr.mustache",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/core/source/_patterns/00-atoms/06-buttons/00-buttons.mustache",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/00-atoms/05-buttons/01-btn.mustache",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/functions.php",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/header.php",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab/source/_patterns/00-atoms/05-buttons/02-btn-alt.mustache",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/primer/_base.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/primer/_variables.scss",
@@ -925,73 +861,7 @@
 		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/icons.md",
 		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/utilities.md",
 		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/scaffolding.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/guidelines.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/structures.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/nav.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/posts.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/_plugins/example.rb",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/home.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/_layouts/public-works.html",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/_layouts/basic.html",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/_layouts/terminal.html",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/type.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/globals.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/package.json",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_media.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_typography.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_hero.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_type.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_posts.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_forms.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_alerts.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_links.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/_config.yml",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/primer.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/_layouts/visual-identity.html",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_normalize.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/css/primer.css",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/_site/js/oakland.js",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/README.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/node_modules/grunt-build-control/node_modules/shelljs/src/toEnd.js",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/basic.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/terminal.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/colors.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/public-works.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_flex-table.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/js/bigmenu.js",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_mixins.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/css/_syntax.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/node_modules/grunt-sass/node_modules/node-sass/node_modules/pangyp/gyp/gyp_main.py",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/_site/index.html",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/bourbon/css3/_font-face.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/neat/_neat.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/neat/_neat-helpers.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/neat/settings/_grid.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/bower.json",
-		"/Users/administrator/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_tabnav.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/scss/_filter-list.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/_site/bower_components/primer-markdown/components/markdown.scss",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/node_modules/grunt-sass/node_modules/node-sass/node_modules/npmconf/node_modules/uid-number/uid-number.js",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/CNAME",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/text.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/_site/docs.css",
-		"/Users/administrator/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/.hound.yml",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/.gitignore",
-		"/Users/administrator/SANDBOX/primer/docs/index.md",
-		"/Users/administrator/SANDBOX/primer/docs/nav.md",
-		"/Users/administrator/SANDBOX/primer/docs/_includes/sidenav.html",
-		"/Users/administrator/Downloads/dmps/aminno_member_email.dump",
-		"/Users/administrator/myapp/config/database.yml",
-		"/Users/administrator/vvv-5.5/www/worldstrides/htdocs/wp-content/themes/worldstrides/assets/css/sass/content/components/_tiles.scss",
-		"/Users/administrator/vvv-5.5/www/worldstrides/htdocs/wp-content/themes/worldstrides/assets/css/sass/content/pages/_home.scss",
-		"/Users/administrator/vvv-5.5/www/worldstrides/htdocs/wp-content/themes/worldstrides/assets/css/sass/content/posts/_blog.scss",
-		"/Users/administrator/vvv-5.5/www/worldstrides/htdocs/wp-content/themes/worldstrides/assets/css/sass/content/pages/_search.scss",
-		"/Users/administrator/vvv-5.5/www/worldstrides/htdocs/wp-content/themes/worldstrides/assets/css/sass/content/pages/_press.scss",
-		"/Users/administrator/vvv-5.5/www/worldstrides/htdocs/wp-content/themes/worldstrides/assets/css/sass/bourbon/css3/_placeholder.scss",
-		"/Users/administrator/vvv-5.5/www/worldstrides/htdocs/wp-content/themes/worldstrides/assets/css/sass/content/components/_blocks.scss",
-		"/Users/administrator/vvv-5.5/www/worldstrides/htdocs/wp-content/themes/worldstrides/assets/css/sass/document/forms/_marketo.scss"
+		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/guidelines.md"
 	],
 	"find":
 	{
@@ -1002,6 +872,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan",
 			"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss",
 			"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio",
 			"/Users/administrator/vvv-5.5/www/worldstrides/htdocs/wp-content/themes/worldstrides",
@@ -1045,6 +916,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"comment_form",
+			".alignleft",
+			"the_posts_navigation",
+			"epic_scan_entry_footer",
+			"scrim",
+			"detectmobilebrowser",
+			"$bp--",
+			"$font-size-",
+			"pattern",
 			"@mixin h1",
 			"$color--primary",
 			"content",
@@ -1163,16 +1043,7 @@
 			"<?php echo $background; ?>",
 			"fb-comments",
 			"0.45)",
-			"0.45",
-			"resource",
-			"itinerary",
-			"cta",
-			"ul",
-			"leadership",
-			"$color_background_header",
-			"leader",
-			"transparent-header",
-			"has-featured-image"
+			"0.45"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1249,30 +1120,120 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "pattern-lab/source/_patterns/02-organisms/00-global/00-header.mustache",
+					"file": "index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 162,
+						"buffer_size": 1584,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								162,
-								162
+								0,
+								1584
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/HTML Mustache/Syntaxes/HTMLMustache.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 188.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "category.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								936,
+								936
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 89.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1231,
+								1231
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 3.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "single.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 911,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1282,94 +1243,57 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "pattern-lab/source/_patterns/00-atoms/04-images/00-logo.mustache",
+					"buffer": 4,
+					"file": "comments.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 103,
+						"buffer_size": 2893,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								103,
-								103
+								1559,
+								1559
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/HTML Mustache/Syntaxes/HTMLMustache.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "pattern-lab/source/_patterns/01-molecules/05-navigation/00-primary-nav.mustache",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 544,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								544,
-								544
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/HTML Mustache/Syntaxes/HTMLMustache.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 442.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 17,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 3,
-					"file": "header.php",
+					"buffer": 5,
+					"file": "scss/00-config/_fonts.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1586,
+						"buffer_size": 476,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1583,
-								1583
+								401,
+								401
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
 							"history_list_is_closing": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1379,565 +1303,27 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "functions.php",
+					"buffer": 6,
+					"file": "template-parts/content-single.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4289,
+						"buffer_size": 640,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3689,
-								3689
+								424,
+								424
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"history_list_is_closing": true,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1455.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "scss/00-config/_fonts.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 346,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								346,
-								346
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"history_list_is_closing": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "scss/30-global/_header.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 489,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								253,
-								253
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "node_modules/susy/sass/susy/language/susyone/_media.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								903,
-								903
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "pattern-lab/source/_patterns/00-atoms/00-meta/_00-head.mustache",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1251,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								612,
-								612
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/HTML Mustache/Syntaxes/HTMLMustache.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "grunt-tasks/pattern-lab/pattern-lab.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5864,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2755,
-								2755
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"history_list_is_closing": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1134.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "scss/10-base/_typography.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 399,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								399,
-								399
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "scss/00-config/_colors.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 696,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								466,
-								466
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "scss/60-pages/_styleguide-specific.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3594,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3288,
-								3288
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1861.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "scss/00-config/_settings.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 106,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104,
-								104
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "style.css",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 14878,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14877,
-								14877
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 11752.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "scss/30-global/_html-elements.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 530,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								294,
-								294
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 4.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "node_modules/bourbon/app/assets/stylesheets/addons/_buttons.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1715,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 691,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										197,
-										212
-									],
-									[
-										383,
-										398
-									],
-									[
-										605,
-										614
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								691,
-								691
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 2,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 226.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "scss/40-components/_btn.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1926,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1850,
-								1850
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"history_list_is_closing": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 664.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "scss/10-base/_grids.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 92,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								92,
-								92
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"history_list_is_closing": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "scss/40-components/_primary-nav.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 475,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								132,
-								132
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"history_list_is_closing": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "scss/00-config/_breakpoints.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 917,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								721,
-								721
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1945,22 +1331,28 @@
 					},
 					"stack_index": 7,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
-					"buffer": 22,
-					"file": "scss/00-config/_utilities.scss",
+					"buffer": 7,
+					"file": "scss/30-global/_html-elements.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 113,
+						"buffer_size": 763,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								113,
-								113
+								763,
+								763
 							]
 						],
 						"settings":
@@ -1969,72 +1361,40 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
-					"file": "node_modules/breakpoint-sass/stylesheets/_breakpoint.scss",
+					"buffer": 8,
+					"file": "scss/40-components/_comments.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2631,
+						"buffer_size": 515,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1617,
-								1624
+								57,
+								57
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 587.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "scss/50-templates/_grid.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1032,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3,
-								1032
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -2104,12 +1464,324 @@
 		"selected_items":
 		[
 			[
+				"header",
+				"header.php"
+			],
+			[
+				"_comm",
+				"scss/40-components/_comments.scss"
+			],
+			[
+				"_html",
+				"scss/30-global/_html-elements.scss"
+			],
+			[
+				"_form",
+				"scss/40-components/_search-form.scss"
+			],
+			[
+				"index",
+				"index.php"
+			],
+			[
 				"",
+				"single.php"
+			],
+			[
+				"_comment",
+				"scss/40-components/_comments.scss"
+			],
+			[
+				"_post",
+				"scss/50-templates/_post.scss"
+			],
+			[
+				"_btn",
+				"scss/40-components/_btn.scss"
+			],
+			[
+				"comments",
+				"comments.php"
+			],
+			[
+				"_font",
+				"scss/00-config/_fonts.scss"
+			],
+			[
+				"templat",
+				"inc/template-tags.php"
+			],
+			[
+				"categ",
+				"scss/40-components/_category-nav.scss"
+			],
+			[
+				"_main",
+				"scss/30-global/_main-section.scss"
+			],
+			[
+				"content-sing",
+				"template-parts/content-single.php"
+			],
+			[
+				"sing",
+				"single.php"
+			],
+			[
+				"templ",
+				"inc/template-tags.php"
+			],
+			[
+				"_po",
+				"scss/50-templates/_post.scss"
+			],
+			[
+				"_util",
+				"scss/00-config/_utilities.scss"
+			],
+			[
+				"_ivew",
+				"scss/30-global/_view.scss"
+			],
+			[
+				"_nav",
 				"scss/40-components/_primary-nav.scss"
+			],
+			[
+				"_colors",
+				"scss/00-config/_colors.scss"
+			],
+			[
+				"tags",
+				"inc/template-tags.php"
+			],
+			[
+				"_side",
+				"scss/30-global/_sidebar.scss"
+			],
+			[
+				"colors.scss",
+				"scss/00-config/_colors.scss"
+			],
+			[
+				"funct",
+				"functions.php"
+			],
+			[
+				"all-",
+				"scss/_all-partials.scss"
+			],
+			[
+				"content.php",
+				"template-parts/content.php"
 			],
 			[
 				"_header",
 				"scss/30-global/_header.scss"
+			],
+			[
+				"func",
+				"functions.php"
+			],
+			[
+				"_break",
+				"scss/00-config/_breakpoints.scss"
+			],
+			[
+				"_z",
+				"scss/00-config/_z-index.scss"
+			],
+			[
+				"_view",
+				"scss/30-global/_view.scss"
+			],
+			[
+				"_grids",
+				"scss/10-base/_grids.scss"
+			],
+			[
+				"_ut",
+				"scss/00-config/_utilities.scss"
+			],
+			[
+				"front",
+				"front-page.php"
+			],
+			[
+				"_serv",
+				"scss/60-pages/services/_services.scss"
+			],
+			[
+				"about",
+				"about.php"
+			],
+			[
+				"_hero",
+				"scss/60-pages/page/_hero.scss"
+			],
+			[
+				"ser",
+				"services.php"
+			],
+			[
+				"_home",
+				"scss/60-pages/home/_home.scss"
+			],
+			[
+				"_typ",
+				"scss/10-base/_typography.scss"
+			],
+			[
+				"_headings",
+				"pattern-lab/source/_patterns/00-atoms/02-text/00-headings.mustache"
+			],
+			[
+				"head",
+				"header.php"
+			],
+			[
+				"fron",
+				"front-page.php"
+			],
+			[
+				"footer",
+				"footer.php"
+			],
+			[
+				"_icons",
+				"scss/10-base/_icons-base.scss"
+			],
+			[
+				"_icon",
+				"scss/00-config/_icons.scss"
+			],
+			[
+				"_color",
+				"scss/00-config/_colors.scss"
+			],
+			[
+				"_footer",
+				"scss/30-global/_footer.scss"
+			],
+			[
+				"f",
+				"footer.php"
+			],
+			[
+				"_utl",
+				"scss/00-config/_utilities.scss"
+			],
+			[
+				"_lay",
+				"node_modules/singularitygs/stylesheets/singularitygs/helpers/_layout.scss"
+			],
+			[
+				"style.css",
+				"css/style.css"
+			],
+			[
+				"_head",
+				"scss/30-global/_header.scss"
+			],
+			[
+				"foo",
+				"footer.php"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"function",
+				"functions.php"
+			],
+			[
+				"_hom",
+				"scss/60-pages/home/_home.scss"
+			],
+			[
+				"_btns",
+				"scss/40-components/_btn.scss"
+			],
+			[
+				"front-",
+				"front-page.php"
+			],
+			[
+				"_colo",
+				"scss/00-config/_colors.scss"
+			],
+			[
+				"home-her",
+				"pattern-lab/source/_patterns/02-organisms/03-sections/03-home-hero.mustache"
+			],
+			[
+				"_uti",
+				"scss/00-config/_utilities.scss"
+			],
+			[
+				"homepage",
+				"pattern-lab/source/_patterns/03-templates/00-homepage.mustache"
+			],
+			[
+				"content-page",
+				"template-parts/content-page.php"
+			],
+			[
+				"page.",
+				"page.php"
+			],
+			[
+				"_prim",
+				"scss/40-components/_primary-nav.scss"
+			],
+			[
+				"header.php",
+				"header.php"
+			],
+			[
+				"_prima",
+				"scss/40-components/_primary-nav.scss"
+			],
+			[
+				"_gird",
+				"scss/50-templates/_grid.scss"
+			],
+			[
+				"header.mu",
+				"pattern-lab/source/_patterns/02-organisms/00-global/00-header.mustache"
+			],
+			[
+				"_grid",
+				"scss/50-templates/_grid.scss"
+			],
+			[
+				"_node-teas",
+				"scss/40-components/_node-teaser.scss"
+			],
+			[
+				"_fonts",
+				"scss/00-config/_fonts.scss"
+			],
+			[
+				"_pri",
+				"scss/40-components/_primary-nav.scss"
+			],
+			[
+				"_var",
+				"node_modules/breakpoint-sass/tests/tests/_variables.scss"
+			],
+			[
+				"pattern",
+				"pattern-lab-assets.yml"
+			],
+			[
+				"pattern-",
+				"grunt-tasks/pattern-lab/pattern-lab.js"
+			],
+			[
+				"_layout",
+				"scss/50-templates/_layout--content.scss"
 			],
 			[
 				"_media",
@@ -2132,28 +1804,12 @@
 				"pattern-lab/source/_patterns/01-molecules/05-navigation/00-primary-nav.mustache"
 			],
 			[
-				"header",
-				"header.php"
-			],
-			[
 				"headermus",
 				"pattern-lab/source/_patterns/02-organisms/00-global/00-header.mustache"
 			],
 			[
-				"_nav",
-				"scss/40-components/_primary-nav.scss"
-			],
-			[
-				"function",
-				"functions.php"
-			],
-			[
 				"btn-al",
 				"pattern-lab/source/_patterns/00-atoms/05-buttons/02-btn-alt.mustache"
-			],
-			[
-				"_btn",
-				"scss/40-components/_btn.scss"
 			],
 			[
 				"_butn",
@@ -2176,36 +1832,12 @@
 				"pattern-lab/source/_patterns/00-atoms/02-text/03-inline-elements.mustache"
 			],
 			[
-				"_font",
-				"scss/00-config/_fonts.scss"
-			],
-			[
-				"_typ",
-				"scss/10-base/_typography.scss"
-			],
-			[
-				"_html",
-				"scss/30-global/_html-elements.scss"
-			],
-			[
-				"_head",
-				"scss/30-global/_header.scss"
-			],
-			[
-				"_fonts",
-				"scss/00-config/_fonts.scss"
-			],
-			[
 				"pat",
 				"grunt-tasks/pattern-lab/pattern-lab.js"
 			],
 			[
 				"_style",
 				"scss/60-pages/_styleguide-specific.scss"
-			],
-			[
-				"_color",
-				"scss/00-config/_colors.scss"
 			],
 			[
 				"_settings",
@@ -2218,14 +1850,6 @@
 			[
 				"colo",
 				"node_modules/grunt-pattern-lab-component-builder/templates/colors.mustache"
-			],
-			[
-				"_grid",
-				"scss/50-templates/_grid.scss"
-			],
-			[
-				"_break",
-				"node_modules/breakpoint-sass/stylesheets/_breakpoint.scss"
 			],
 			[
 				"_gr",
@@ -2244,24 +1868,8 @@
 				"~/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/primer/_base.scss"
 			],
 			[
-				"funct",
-				"functions.php"
-			],
-			[
-				"_var",
-				"scss/primer/_variables.scss"
-			],
-			[
 				"gruntconf",
 				"Gruntconfig.yml"
-			],
-			[
-				"grunt",
-				"Gruntfile.js"
-			],
-			[
-				"_layout",
-				"scss/_layout.scss"
 			],
 			[
 				"deve",
@@ -2272,20 +1880,12 @@
 				"docs/layout.md"
 			],
 			[
-				"_ut",
-				"scss/_utility.scss"
-			],
-			[
 				"docs-o",
 				"docs/css/_docs-overrides.scss"
 			],
 			[
 				"docs",
 				"docs/docs.scss"
-			],
-			[
-				"_footer",
-				"scss/_footer.scss"
 			],
 			[
 				"images",
@@ -2298,10 +1898,6 @@
 			[
 				"side",
 				"docs/_includes/sidenav.html"
-			],
-			[
-				"_icons",
-				"scss/_icons.scss"
 			],
 			[
 				"icons",
@@ -2328,10 +1924,6 @@
 				"docs/layout.md"
 			],
 			[
-				"_lay",
-				"scss/_layout.scss"
-			],
-			[
 				"stru",
 				"docs/structures.md"
 			],
@@ -2342,10 +1934,6 @@
 			[
 				"posts",
 				"docs/posts.md"
-			],
-			[
-				"footer",
-				"docs/_includes/footer.html"
 			],
 			[
 				"_sec",
@@ -2386,234 +1974,6 @@
 			[
 				"visual",
 				"docs/visual-identity.md"
-			],
-			[
-				"web-",
-				"docs/web-typography.md"
-			],
-			[
-				"_docs",
-				"docs/css/_docs-overrides.scss"
-			],
-			[
-				"_buttons",
-				"scss/_buttons.scss"
-			],
-			[
-				"oak",
-				"docs/js/oakland.js"
-			],
-			[
-				"_docs-o",
-				"docs/css/_docs-overrides.scss"
-			],
-			[
-				"defa",
-				"docs/_layouts/default.html"
-			],
-			[
-				"parks",
-				"docs/parks.md"
-			],
-			[
-				"page",
-				"docs/_layouts/page.html"
-			],
-			[
-				"type.md",
-				"docs/type.md"
-			],
-			[
-				"pattern",
-				"docs/pattern-portfolio.md"
-			],
-			[
-				"buttons",
-				"docs/buttons.md"
-			],
-			[
-				"def",
-				"docs/_layouts/default.html"
-			],
-			[
-				"_norm",
-				"scss/_normalize.scss"
-			],
-			[
-				"nav.md",
-				"docs/nav.md"
-			],
-			[
-				"docs.scss",
-				"docs/docs.scss"
-			],
-			[
-				"_nva",
-				"scss/_navigation.scss"
-			],
-			[
-				"default.",
-				"docs/_layouts/default.html"
-			],
-			[
-				"publi",
-				"docs/_layouts/public-works.html"
-			],
-			[
-				"terminal",
-				"docs/_layouts/terminal.html"
-			],
-			[
-				"basic",
-				"docs/_layouts/basic.html"
-			],
-			[
-				"page.",
-				"docs/_layouts/page.html"
-			],
-			[
-				"home.tml",
-				"docs/_layouts/home.html"
-			],
-			[
-				"_layo",
-				"scss/_layout.scss"
-			],
-			[
-				"global",
-				"docs/globals.md"
-			],
-			[
-				"pakc",
-				"package.json"
-			],
-			[
-				"con",
-				"_config.yml"
-			],
-			[
-				"config",
-				"_config.yml"
-			],
-			[
-				"type",
-				"docs/type.md"
-			],
-			[
-				"_type",
-				"scss/_type.scss"
-			],
-			[
-				"_post",
-				"scss/_posts.scss"
-			],
-			[
-				"_icon",
-				"scss/_icons.scss"
-			],
-			[
-				"_hero",
-				"scss/_hero.scss"
-			],
-			[
-				"_links",
-				"scss/_links.scss"
-			],
-			[
-				"_alert",
-				"scss/_alerts.scss"
-			],
-			[
-				"_typo",
-				"scss/_typography.scss"
-			],
-			[
-				"_termin",
-				"docs/_layouts/terminal.html"
-			],
-			[
-				"_basic",
-				"docs/_layouts/basic.html"
-			],
-			[
-				"publ",
-				"docs/_layouts/public-works.html"
-			],
-			[
-				"_home",
-				"docs/_layouts/home.html"
-			],
-			[
-				"_foo",
-				"scss/_footer.scss"
-			],
-			[
-				"colors",
-				"docs/colors.md"
-			],
-			[
-				"_forms",
-				"scss/_forms.scss"
-			],
-			[
-				"_me",
-				"scss/_menu.scss"
-			],
-			[
-				"_al",
-				"scss/_alerts.scss"
-			],
-			[
-				"col",
-				"docs/colors.md"
-			],
-			[
-				".md",
-				"README.md"
-			],
-			[
-				"nav.",
-				"docs/nav.md"
-			],
-			[
-				"_mixin",
-				"scss/_mixins.scss"
-			],
-			[
-				"bas",
-				"docs/_layouts/basic.html"
-			],
-			[
-				"term",
-				"docs/_layouts/terminal.html"
-			],
-			[
-				"alert",
-				"docs/alerts.md"
-			],
-			[
-				"typ",
-				"docs/type.md"
-			],
-			[
-				"_flex",
-				"scss/_flex-table.scss"
-			],
-			[
-				"primer",
-				"scss/primer.scss"
-			],
-			[
-				"syntax",
-				"docs/css/_syntax.scss"
-			],
-			[
-				"_form",
-				"scss/_forms.scss"
-			],
-			[
-				"_sect",
-				"scss/_sections.scss"
 			]
 		],
 		"width": 0.0
@@ -2636,7 +1996,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 		"xdebug":
@@ -2647,7 +2007,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 221.0,
 	"status_bar_visible": true,
 	"template_settings":

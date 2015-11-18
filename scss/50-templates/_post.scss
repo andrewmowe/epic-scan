@@ -6,13 +6,6 @@
 
 .single-post {
 
-	.site-content {
-
-		@include breakpoint($bp-md) {
-			margin-top: 126px;
-		}
-	}
-
 	.entry-title {
 		color: $color-primary;
 	}

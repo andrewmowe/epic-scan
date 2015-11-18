@@ -6,3 +6,25 @@
 		@include span(3 last);
 	}
 }
+
+.search-form {
+	position: relative;
+	max-width: 600px;
+	margin-bottom: 2em;
+
+	.search-field {
+		border: 2px solid $color-primary;
+		width: 100%;
+	}
+
+	.search-submit {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		color: $color-primary;
+
+		.fa-search {
+			font-size: 1.75em;
+		}
+	}
+}
