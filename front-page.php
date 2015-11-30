@@ -118,32 +118,36 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		<?php if( get_field( 'home_testimonial' ) ) : ?>
-
-			<?php
-			$testimonial = get_field( 'home_testimonial' );
-			$t_id = $testimonial->ID;
-			?>
+		<?php if( have_rows( 'home_testimonials' ) ) : ?>
 
 			<section class="home-testimonial">
 				
 				<div class="container narrow">
 					
 					<h2>What our clients say</h2>
-					
-					<blockquote class="testimonial">
+
+					<?php while( have_rows( 'home_testimonials' ) ) : the_row(); ?>
+
+						<?php
+						$testimonial = get_sub_field( 'home_testimonial' );
+						$t_id = $testimonial->ID;
+						?>
+								
+						<blockquote class="testimonial">
+							
+							<p><?php the_field('test_quote', $t_id); ?></p>
 						
-						<p><?php the_field('test_quote', $t_id); ?></p>
-					
-						<footer>
+							<footer>
 
-							<span class="testimonial-name"><?php the_field('test_name', $t_id); ?></span>
-							<span class="testimonial-role"><?php the_field('test_job_title', $t_id); ?></span>
-							<span class="testimonial-company"><?php the_field('test_company', $t_id); ?></span>
+								<span class="testimonial-name"><?php the_field('test_name', $t_id); ?></span>
+								<span class="testimonial-role"><?php the_field('test_job_title', $t_id); ?></span>
+								<span class="testimonial-company"><?php the_field('test_company', $t_id); ?></span>
 
-						</footer>
-					
-					</blockquote>
+							</footer>
+						
+						</blockquote>
+
+					<?php endwhile; ?>
 
 				</div>
 

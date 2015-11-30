@@ -176,30 +176,60 @@ if( function_exists('acf_add_options_page') ) {
 /**
  * Custom Post Types
  */
-register_post_type( 'testimonials',
-    array(
-        'labels' => array(
-            'name' => 'Testimonials',
-            'singular_name' => 'Testimonial',
-            'add_new' => 'Add New',
-            'add_new_item' => 'Add New Testimonial',
-            'edit' => 'Edit',
-            'edit_item' => 'Edit Testimonial',
-            'new_item' => 'New Testimonial',
-            'view' => 'View',
-            'view_item' => 'View Testimonial',
-            'search_items' => 'Search Testimonials',
-            'not_found' => 'No Testimonials found',
-            'not_found_in_trash' => 'No Testimonials found in Trash',
-            'parent' => 'Parent Testimonial'
-        ),
+function epic_scan_cpts() {
+	register_post_type( 'project',
+	    array(
+	        'labels' => array(
+	            'name' => 'Projects',
+	            'singular_name' => 'Project',
+	            'add_new' => 'Add New',
+	            'add_new_item' => 'Add New Project',
+	            'edit' => 'Edit',
+	            'edit_item' => 'Edit Project',
+	            'new_item' => 'New Project',
+	            'view' => 'View',
+	            'view_item' => 'View Project',
+	            'search_items' => 'Search Projects',
+	            'not_found' => 'No Projects found',
+	            'not_found_in_trash' => 'No Projects found in Trash',
+	            'parent' => 'Parent Project'
+	        ),
 
-        'public' => true,
-        'menu_position' => 15,
-        'supports' => array( 'title' ),
-    )
-);
+	        'public' => true,
+	        'menu_position' => 5,
+	        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'comments', 'revisions' ),
+	        'has_archive' => true,
+	        'taxonomies' => array( 'category' ),
+	        'capability_type' => 'post'
+	    )
+	);
 
+	register_post_type( 'testimonials',
+	    array(
+	        'labels' => array(
+	            'name' => 'Testimonials',
+	            'singular_name' => 'Testimonial',
+	            'add_new' => 'Add New',
+	            'add_new_item' => 'Add New Testimonial',
+	            'edit' => 'Edit',
+	            'edit_item' => 'Edit Testimonial',
+	            'new_item' => 'New Testimonial',
+	            'view' => 'View',
+	            'view_item' => 'View Testimonial',
+	            'search_items' => 'Search Testimonials',
+	            'not_found' => 'No Testimonials found',
+	            'not_found_in_trash' => 'No Testimonials found in Trash',
+	            'parent' => 'Parent Testimonial'
+	        ),
+
+	        'public' => true,
+	        'menu_position' => 5,
+	        'supports' => array( 'title' )
+	    )
+	);
+}
+
+add_action( 'init', 'epic_scan_cpts' );
 /**
  * Custom read more
  */

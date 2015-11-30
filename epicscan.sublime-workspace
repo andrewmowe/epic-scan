@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"home_test",
+				"home_testimonial"
+			],
+			[
+				"P",
+				"Project"
+			],
+			[
+				"Pr",
+				"Project"
+			],
+			[
 				"tex",
 				"text-align"
 			],
@@ -502,76 +514,32 @@
 			[
 				"block",
 				"block"
-			],
-			[
-				"form",
-				"formObject"
-			],
-			[
-				"on",
-				"onsubmit"
-			],
-			[
-				"goal--d",
-				"goal--description--edit"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "index.php",
+			"file": "archive.php",
 			"settings":
 			{
-				"buffer_size": 1584,
+				"buffer_size": 1541,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "category.php",
+			"file": "author.php",
 			"settings":
 			{
-				"buffer_size": 1244,
+				"buffer_size": 1923,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "header.php",
+			"file": "template-parts/content.php",
 			"settings":
 			{
-				"buffer_size": 1855,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "single.php",
-			"settings":
-			{
-				"buffer_size": 911,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "comments.php",
-			"settings":
-			{
-				"buffer_size": 2893,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/00-config/_fonts.scss",
-			"settings":
-			{
-				"buffer_size": 476,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "template-parts/content-single.php",
-			"settings":
-			{
-				"buffer_size": 640,
+				"buffer_size": 1362,
 				"line_ending": "Unix"
 			}
 		},
@@ -590,6 +558,46 @@
 				"buffer_size": 515,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "scss/30-global/_main-section.scss",
+			"settings":
+			{
+				"buffer_size": 146,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/30-global/_site-content.scss",
+			"settings":
+			{
+				"buffer_size": 232,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/30-global/_sidebar.scss",
+			"settings":
+			{
+				"buffer_size": 406,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/50-templates/_post.scss",
+			"settings":
+			{
+				"buffer_size": 2227,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/40-components/_category-nav.scss",
+			"settings":
+			{
+				"buffer_size": 733,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -599,10 +607,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 267.0,
-		"last_filter": "sshtml",
+		"height": 392.0,
+		"last_filter": "pack",
 		"selected_items":
 		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
 			[
 				"sshtml",
 				"Set Syntax: HTML"
@@ -610,10 +622,6 @@
 			[
 				"in",
 				"Package Control: Install Package"
-			],
-			[
-				"pack",
-				"Package Control: Remove Package"
 			],
 			[
 				"colo",
@@ -708,13 +716,14 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 503.0
+		"width": 476.0
 	},
 	"console":
 	{
 		"height": 139.0,
 		"history":
 		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
 			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
 			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
 		]
@@ -730,17 +739,35 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/administrator/MOWE/andrewmowe.github.io"
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/template-parts"
 	],
 	"file_history":
 	[
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/header.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/template-parts/content-single.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_fonts.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/comments.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/template-parts/content.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/archive-project.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/footer.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/front-page.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/archive.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/searchform.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/search.php",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/inc/template-tags.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/index.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/404.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/category.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/template-parts/content-none.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_breakpoints.scss",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/single.php",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/functions.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/header.php",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/js/script.js",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/sidebar.php",
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/template-parts/content-search.php",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/js/detectmobilebrowser.js",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/60-pages/page/_hero.scss",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_fonts.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/10-base/_typography.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/twentyfifteen/style.css",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_wordpress-classes.scss",
@@ -760,11 +787,7 @@
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_settings.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_html-elements.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_search-form.scss",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/template-parts/content.php",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_breakpoints.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/30-global/_icons-application.scss",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/footer.php",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/front-page.php",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/about.php",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_z-index.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/services.php",
@@ -848,20 +871,7 @@
 		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/typography.md",
 		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/identity.md",
 		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/parks.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/_layouts/default.html",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/visual-identity.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/_layouts/home.html",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/sticky-subnav.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/_includes/footer.html",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/_includes/header.html",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/forms.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/color.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/buttons.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/alerts.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/icons.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/utilities.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/scaffolding.md",
-		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/guidelines.md"
+		"/Users/administrator/MOWE/Objective Subject/OAKLAND/oakland-pattern-portfolio/docs/_layouts/default.html"
 	],
 	"find":
 	{
@@ -916,6 +926,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"epic_scan_entry_footer",
+			"get_search_form",
+			"content-area container",
 			"comment_form",
 			".alignleft",
 			"the_posts_navigation",
@@ -1040,10 +1053,7 @@
 			".page-template-default",
 			"product_line",
 			"product line",
-			"<?php echo $background; ?>",
-			"fb-comments",
-			"0.45)",
-			"0.45"
+			"<?php echo $background; ?>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1120,16 +1130,16 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.php",
+					"file": "archive.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1584,
+						"buffer_size": 1541,
 						"regions":
 						{
 						},
@@ -1137,67 +1147,36 @@
 						[
 							[
 								0,
-								1584
+								1541
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 188.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "category.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1244,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								936,
-								936
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 89.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "header.php",
+					"buffer": 1,
+					"file": "author.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1855,
+						"buffer_size": 1923,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1231,
-								1231
+								535,
+								535
 							]
 						],
 						"settings":
@@ -1205,141 +1184,50 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 3.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 92.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "template-parts/content.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "single.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 911,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								565,
-								565
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "comments.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2893,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1559,
-								1559
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 442.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "scss/00-config/_fonts.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 476,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								401,
-								401
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"history_list_is_closing": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "template-parts/content-single.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 640,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								424,
-								424
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
-					"buffer": 7,
+					"buffer": 3,
 					"file": "scss/30-global/_html-elements.scss",
 					"semi_transient": false,
 					"settings":
@@ -1364,11 +1252,11 @@
 						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 4,
 					"file": "scss/40-components/_comments.scss",
 					"semi_transient": false,
 					"settings":
@@ -1380,8 +1268,8 @@
 						"selection":
 						[
 							[
-								57,
-								57
+								251,
+								251
 							]
 						],
 						"settings":
@@ -1394,7 +1282,155 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "scss/30-global/_main-section.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								146,
+								146
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"history_list_is_closing": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scss/30-global/_site-content.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 232,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								200,
+								200
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "scss/30-global/_sidebar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								391,
+								391
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "scss/50-templates/_post.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1055,
+								1055
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 688.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "scss/40-components/_category-nav.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								536,
+								536
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1464,6 +1500,102 @@
 		"selected_items":
 		[
 			[
+				"content",
+				"epic-scan/template-parts/content.php"
+			],
+			[
+				"",
+				"epic-scan/template-parts/content-single.php"
+			],
+			[
+				"arch",
+				"epic-scan/archive.php"
+			],
+			[
+				"single",
+				"epic-scan/single.php"
+			],
+			[
+				"foo",
+				"epic-scan/footer.php"
+			],
+			[
+				"fron",
+				"epic-scan/front-page.php"
+			],
+			[
+				"archi",
+				"epic-scan/archive.php"
+			],
+			[
+				"_post",
+				"epic-scan/scss/50-templates/_post.scss"
+			],
+			[
+				"content-sin",
+				"epic-scan/template-parts/content-single.php"
+			],
+			[
+				"inde",
+				"epic-scan/index.php"
+			],
+			[
+				"cate",
+				"epic-scan/category.php"
+			],
+			[
+				"func",
+				"epic-scan/functions.php"
+			],
+			[
+				"search",
+				"epic-scan/search.php"
+			],
+			[
+				"content-none",
+				"epic-scan/template-parts/content-none.php"
+			],
+			[
+				"side",
+				"epic-scan/sidebar.php"
+			],
+			[
+				"content-search",
+				"epic-scan/template-parts/content-search.php"
+			],
+			[
+				"_side",
+				"epic-scan/scss/30-global/_sidebar.scss"
+			],
+			[
+				"404",
+				"epic-scan/404.php"
+			],
+			[
+				"index",
+				"epic-scan/index.php"
+			],
+			[
+				"singl",
+				"epic-scan/single.php"
+			],
+			[
+				"_nav",
+				"epic-scan/scss/40-components/_category-nav.scss"
+			],
+			[
+				"_break",
+				"epic-scan/scss/00-config/_breakpoints.scss"
+			],
+			[
+				"script",
+				"epic-scan/js/script.js"
+			],
+			[
+				"_main",
+				"epic-scan/scss/30-global/_main-section.scss"
+			],
+			[
 				"header",
 				"header.php"
 			],
@@ -1480,20 +1612,8 @@
 				"scss/40-components/_search-form.scss"
 			],
 			[
-				"index",
-				"index.php"
-			],
-			[
-				"",
-				"single.php"
-			],
-			[
 				"_comment",
 				"scss/40-components/_comments.scss"
-			],
-			[
-				"_post",
-				"scss/50-templates/_post.scss"
 			],
 			[
 				"_btn",
@@ -1514,10 +1634,6 @@
 			[
 				"categ",
 				"scss/40-components/_category-nav.scss"
-			],
-			[
-				"_main",
-				"scss/30-global/_main-section.scss"
 			],
 			[
 				"content-sing",
@@ -1544,20 +1660,12 @@
 				"scss/30-global/_view.scss"
 			],
 			[
-				"_nav",
-				"scss/40-components/_primary-nav.scss"
-			],
-			[
 				"_colors",
 				"scss/00-config/_colors.scss"
 			],
 			[
 				"tags",
 				"inc/template-tags.php"
-			],
-			[
-				"_side",
-				"scss/30-global/_sidebar.scss"
 			],
 			[
 				"colors.scss",
@@ -1578,14 +1686,6 @@
 			[
 				"_header",
 				"scss/30-global/_header.scss"
-			],
-			[
-				"func",
-				"functions.php"
-			],
-			[
-				"_break",
-				"scss/00-config/_breakpoints.scss"
 			],
 			[
 				"_z",
@@ -1640,10 +1740,6 @@
 				"header.php"
 			],
 			[
-				"fron",
-				"front-page.php"
-			],
-			[
 				"footer",
 				"footer.php"
 			],
@@ -1682,10 +1778,6 @@
 			[
 				"_head",
 				"scss/30-global/_header.scss"
-			],
-			[
-				"foo",
-				"footer.php"
 			],
 			[
 				"grunt",
@@ -1896,10 +1988,6 @@
 				"docs/_layouts/home.html"
 			],
 			[
-				"side",
-				"docs/_includes/sidenav.html"
-			],
-			[
 				"icons",
 				"docs/icons.md"
 			],
@@ -1922,58 +2010,6 @@
 			[
 				"layou",
 				"docs/layout.md"
-			],
-			[
-				"stru",
-				"docs/structures.md"
-			],
-			[
-				"nav",
-				"docs/nav.md"
-			],
-			[
-				"posts",
-				"docs/posts.md"
-			],
-			[
-				"_sec",
-				"scss/_sections.scss"
-			],
-			[
-				"patter",
-				"docs/pattern-portfolio.md"
-			],
-			[
-				"modules",
-				"docs/modules.md"
-			],
-			[
-				"visu",
-				"docs/visual-identity.md"
-			],
-			[
-				"default",
-				"docs/_layouts/default.html"
-			],
-			[
-				"inde",
-				"docs/index.md"
-			],
-			[
-				"_text",
-				"scss/_text-elements.scss"
-			],
-			[
-				"color",
-				"docs/color.md"
-			],
-			[
-				"sdie",
-				"docs/_includes/sidenav.html"
-			],
-			[
-				"visual",
-				"docs/visual-identity.md"
 			]
 		],
 		"width": 0.0
@@ -1996,7 +2032,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 		"xdebug":
@@ -2007,7 +2043,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 221.0,
 	"status_bar_visible": true,
 	"template_settings":

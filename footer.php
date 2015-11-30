@@ -57,7 +57,7 @@
 
 				</div>
 
-				<span class="footer-contact-phone">Call Today <strong><?php the_field('phone_number', 'option'); ?></strong></span>
+				<span class="footer-contact-phone"><strong><?php the_field('phone_number', 'option'); ?></strong></span>
 
 			</div>
 

@@ -21,18 +21,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					if( is_author() ) :
-
-						echo '<h1 class="blog-title">' . get_query_var('author_name') . '</h1>';
-
-					else :
-
-						the_archive_title( '<h1 class="blog-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description">', '</div>' );
-
-					endif;
-				?>
+				<h1 class="blog-title">Projects</h1>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>

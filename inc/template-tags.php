@@ -40,7 +40,7 @@ if ( ! function_exists( 'epic_scan_entry_footer' ) ) :
  */
 function epic_scan_entry_footer() {
 	// Hide category and tag text for pages.
-	if ( 'post' == get_post_type() ) {
+	if ( 'post' == get_post_type() || 'project' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ' | ', 'epic-scan' ) );
 		if ( $categories_list && epic_scan_categorized_blog() ) {

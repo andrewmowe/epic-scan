@@ -79,10 +79,10 @@
 
 .entry-wrap {
 
-	.blog-main .has-post-thumbnail {
+	.blog-main .has-post-thumbnail & {
 
 		@include breakpoint($bp-lg) {
-			@include span(5 of 9);
+			@include span(5 of 9 last);
 		}
 	}
 }

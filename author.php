@@ -9,31 +9,30 @@
 
 get_header(); ?>
 
-	<nav class="blog-header">
-		<div class="container">
-			<?php wp_nav_menu( array( 'theme_location' => 'categories', 'menu_id' => 'category-menu' ) ); ?>
-		</div>
-	</nav>
+	<?php
+		$user_id = 'user_' . get_current_user_id();
+		$user_type = get_field('user_type', $user_id);
+	?>
 
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main blog-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
-
 			<header class="page-header">
 				<?php
-					if( is_author() ) :
+					if( $user_type === 'client' || $user_type === 'third-party' ) :
 
-						echo '<h1 class="blog-title">' . get_query_var('author_name') . '</h1>';
+						echo '<h1 class="blog-title">' . get_query_var('author_name') . ' Projects</h1>';
 
 					else :
 
-						the_archive_title( '<h1 class="blog-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						echo '<h1 class="blog-title">Posts by ' . get_query_var('author_name') . '</h1>';
 
 					endif;
 				?>
 			</header><!-- .page-header -->
+
+		<?php if ( have_posts() && $user_type != 'client' && $user_type != 'third-party' ) : ?>
+
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -51,6 +50,27 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
+
+		<?php elseif ( $user_type === 'client' || $user_type === 'third-party' ) : ?>
+
+					<?php
+						$projects = get_field('users_projects', $user_id);
+						
+						if ( $projects ) :
+
+							foreach ( $projects as $post) :
+
+								setup_postdata($post);
+
+								include(locate_template('template-parts/content.php'));
+
+							endforeach;
+
+							wp_reset_postdata();
+
+						endif;
+
+					?>
 
 		<?php else : ?>
 

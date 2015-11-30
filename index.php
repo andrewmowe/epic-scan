@@ -27,7 +27,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header>
-				<h2 class="blog-title">News</h2>
+				<h1 class="blog-title">News</h1>
 			</header>
 
 			<?php /* Start the Loop */ ?>
