@@ -5,6 +5,16 @@
 	@include breakpoint($bp-lg) {
 		@include span(3 last);
 	}
+
+	.widget-title {
+		font-size: $font-16;
+		font-weight: bold;
+		border-bottom: 2px solid $color-primary;
+		padding-right: 10px;
+		display: inline-block;
+		color: $color-body-alt;
+		margin-bottom: 1em;
+	}
 }
 
 .search-form {
@@ -28,3 +38,84 @@
 		}
 	}
 }
+
+// Newsletter widget
+
+.widget-newsletter {
+	background-color: $color-primary;
+	padding: 30px 15px;
+
+	input {
+		margin-bottom: 1em;
+	}
+}
+
+// Tag list widget
+
+.tlw-list a {
+	color: $color-body-alt;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 1em;
+
+	&:hover {
+		color: darken($color-body-alt, 10%);
+	}
+}
+
+// Twitter widget overrides
+
+.tweet_wrap {
+	.times {
+		em {
+			font-style: normal;
+			color: $gray-light !important;
+		}
+	}
+}
+
+ul.light li.tweets_avatar div.tweet_data {
+	color: $color-body-alt !important;
+}
+
+.fetched_tweets {
+	&.light {
+		li {
+			border: none !important;
+			border-bottom: 1px solid $gray-lightest !important;
+			border-radius: 0 !important;
+		}
+	}
+
+	> li {
+		font-family: $font-family-regular !important;
+		box-shadow: none !important;
+	}
+
+	.tweets_avatar {
+		padding: 0 0 1em 50px !important;
+		position: relative;
+
+		&:before {
+			content: "\f099";
+			font-family: FontAwesome;
+			font-size: 30px;
+			position: absolute;
+			left: 0;
+			top: 5px;
+			color: $color-body-alt;
+		}
+	}
+}
+
+	.tweet_data {
+		font: 16px/20px $font-family-regular !important;
+	}
+
+	.fetched_tweets.light .tweets_avatar .tweet_data.tweet_data a {
+		color: $color-link !important;
+
+		&:hover {
+			color: $color-link-hover !important;
+		}
+	}

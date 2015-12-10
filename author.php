@@ -10,8 +10,11 @@
 get_header(); ?>
 
 	<?php
-		$user_id = 'user_' . get_current_user_id();
+		$current_user_id = get_current_user_id();
+		$user_id = 'user_' . $curr_user_id;
 		$user_type = get_field('user_type', $user_id);
+		$current_author = get_query_var('author');
+		echo $current_user_id;
 	?>
 
 	<div id="primary" class="content-area container">
@@ -19,7 +22,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					if( $user_type === 'client' || $user_type === 'third-party' ) :
+					if( $user_type === 'client' || $user_type === 'third-party' && $current_user_id === $current_author ) :
 
 						echo '<h1 class="blog-title">' . get_query_var('author_name') . ' Projects</h1>';
 
@@ -51,7 +54,7 @@ get_header(); ?>
 
 			<?php the_posts_navigation(); ?>
 
-		<?php elseif ( $user_type === 'client' || $user_type === 'third-party' ) : ?>
+		<?php elseif ( $user_type === 'client' || $user_type === 'third-party' && $current_user_id === $current_author ) : ?>
 
 					<?php
 						$projects = get_field('users_projects', $user_id);

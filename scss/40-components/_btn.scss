@@ -105,6 +105,10 @@ input.btn {
   @include btn($color-primary, $color-primary, true);
 }
 
+.btn-dark {
+  @include btn($white, $gray-dark);
+}
+
 .btn-block {
   display: block;
   width: 100%;
