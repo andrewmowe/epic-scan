@@ -126,6 +126,9 @@ get_header(); ?>
 					
 					<h2>What our clients say</h2>
 
+					<div class="testimonial-list js-flickity"
+						data-flickity-options='{ "prevNextButtons": false, "autoPlay": true }'>
+
 					<?php while( have_rows( 'home_testimonials' ) ) : the_row(); ?>
 
 						<?php
@@ -148,6 +151,8 @@ get_header(); ?>
 						</blockquote>
 
 					<?php endwhile; ?>
+
+					</div>
 
 				</div>
 
@@ -186,25 +191,32 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		<?php if ( have_rows( 'home_project_list' ) ) :
+
+			// vars
+			$project_title = get_field('home_projects_title');
+			$project_bg = get_field('home_projects_img');
+
+			// bg image
+			$image = wp_get_attachment_image_src($project_bg, 'full');
+
+			?>
+
 			<section class="home-projects" style="background-image: url(<?php echo $image[0]; ?>);">
 
 				<div class="scrim-overlay gray-overlay"></div>
 				
 				<div class="container">
 					
-					<h2 class="home-projects-title">{{Project Overview Title}}</h2>
+					<h2 class="home-projects-title"><?php echo $project_title; ?></h2>
 
 					<div class="home-projects-list">
+
+					<?php while ( have_rows( 'home_project_list' ) ) : the_row(); ?>
 						
-						<a href="#" class="btn btn-home-project">test</a>
-						<a href="#" class="btn btn-home-project">test</a>
-						<a href="#" class="btn btn-home-project">test</a>
-						<a href="#" class="btn btn-home-project">test</a>
-						<a href="#" class="btn btn-home-project">test</a>
-						<a href="#" class="btn btn-home-project">testerbergenstein vindaloo</a>
-						<a href="#" class="btn btn-home-project">test with a very long name</a>
-						<a href="#" class="btn btn-home-project">test</a>
-						<a href="#" class="btn btn-home-project">test</a>
+						<span class="btn-home-project"><?php the_sub_field('home_project_term'); ?></span>
+
+					<?php endwhile; ?>
 
 					</div>
 
@@ -223,6 +235,8 @@ get_header(); ?>
 				</div>
 
 			</section>
+
+		<?php endif; ?>
 
 		<?php if( get_field('featured_news_posts') ) : ?>
 

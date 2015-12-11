@@ -99,6 +99,10 @@ input.btn {
 
 .btn-home-project {
   @include btn($white, $color-primary, true);
+
+  &:hover {
+    border-color: $color-primary;
+  }
 }
 
 .btn-read-more {
