@@ -9,6 +9,10 @@
 		left: 0;
 		right: 0;
 		z-index: z(navFixed);
+
+		.admin-bar & {
+			top: 32px;
+		}
 	}
 
 	.container {
