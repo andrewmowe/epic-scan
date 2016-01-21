@@ -77,7 +77,12 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		<?php if ( have_rows('team_members') ) : ?>
+		<?php
+		$team_members = get_users( array(
+				'meta-key' => 'user-type',
+				'meta-value' => 'team-member'
+			));
+		if ( $team_members ) : ?>
 
 			<section class="about-team">
 				
@@ -85,18 +90,23 @@ get_header(); ?>
 					
 					<h2 class="center">The Epic Scan Team</h2>
 
-					<?php while ( have_rows('team_members') ) : the_row();
+					<?php foreach( $team_members as $member ) :
+
+					// print_r($member);
 
 						// vars
-						$name = get_sub_field('team_name');
-						$title = get_sub_field('team_title');
-						$bio = get_sub_field('team_bio');
-						$email = get_sub_field('team_email');
-						$linkedin = get_sub_field('team_linkedin');
-						$twitter = get_sub_field('team_twitter');
+						$u_id = $member->ID;
+						$id = 'user_' . $u_id;
+						$name = $member->display_name;
+						$title = get_field('user_title', $id);
+						$bio = get_field('user_bio', $id);
+						$edu = get_field('user_education', $id);
+						$email = get_field('user_public_email', $id);
+						$linkedin = get_field('user_linkedin', $id);
+						$twitter = get_field('user_twitter', $id);
 
 						// image
-						$image_id = get_sub_field('team_headshot');
+						$image_id = get_field('user_image', $id);
 						$image = wp_get_attachment_image_src($image_id, 'thumbnail');
 						$image_url = $image[0];
 						$image_w = $image[1];
@@ -123,7 +133,7 @@ get_header(); ?>
 									<?php endif; ?>
 
 									<?php if($twitter) : ?>
-										<a href="//twitter.com/<?php echo $twitter; ?>" class="fa fa-twitter"></a>
+										<a href="<?php echo $twitter; ?>" class="fa fa-twitter"></a>
 									<?php endif; ?>
 
 								</div>
@@ -136,13 +146,34 @@ get_header(); ?>
 										<?php echo apply_filters('the_content', $bio); ?>
 									<?php endif; ?>
 
+									<?php if( have_rows( 'user_specialties', $id ) ) : ?>
+
+										<strong>Specialties</strong>
+
+										<ul>
+
+										<?php while( have_rows( 'user_specialties', $id ) ) : the_row(); ?>
+
+											<li><?php the_sub_field('user_specialty'); ?></li>
+
+										<?php endwhile; ?>
+
+										</ul>
+
+									<?php endif; ?>
+
+									<?php if($edu) : ?>
+										<strong>Education</strong>
+										<?php echo apply_filters('the_content', $edu); ?>
+									<?php endif; ?>
+
 								</div>
 
 							</div>
 
 						</div>
 
-					<?php endwhile; ?>
+					<?php endforeach; ?>
 						
 				</div>
 

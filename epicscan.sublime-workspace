@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"get_templ",
+				"get_template_directory_uri"
+			],
+			[
+				"wp_enq",
+				"wp_enqueue_style"
+			],
+			[
+				"home_pro",
+				"home_project_list"
+			],
+			[
+				"curren",
+				"current_user_id"
+			],
+			[
+				"curr",
+				"current_author"
+			],
+			[
 				"home_test",
 				"home_testimonial"
 			],
@@ -494,26 +514,6 @@
 			[
 				"mento",
 				"mentor_meta"
-			],
-			[
-				"get_mentee",
-				"get_my_mentees"
-			],
-			[
-				"current",
-				"current_user"
-			],
-			[
-				"curr",
-				"current_user"
-			],
-			[
-				"link",
-				"linkedin-url"
-			],
-			[
-				"block",
-				"block"
 			]
 		]
 	},
@@ -531,7 +531,63 @@
 			"file": "author.php",
 			"settings":
 			{
-				"buffer_size": 1923,
+				"buffer_size": 2109,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/00-config/_fonts.scss",
+			"settings":
+			{
+				"buffer_size": 476,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/00-config/_icons.scss",
+			"settings":
+			{
+				"buffer_size": 1174,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/00-config/_colors.scss",
+			"settings":
+			{
+				"buffer_size": 850,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pattern-lab/core/source/_patterns/00-atoms/06-buttons/00-buttons.mustache",
+			"settings":
+			{
+				"buffer_size": 209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/40-components/_btn.scss",
+			"settings":
+			{
+				"buffer_size": 2575,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "front-page.php",
+			"settings":
+			{
+				"buffer_size": 7423,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "archive-project.php",
+			"settings":
+			{
+				"buffer_size": 1289,
 				"line_ending": "Unix"
 			}
 		},
@@ -576,10 +632,42 @@
 			}
 		},
 		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 7811,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/30-global/_header.scss",
+			"settings":
+			{
+				"buffer_size": 965,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sidebar.php",
+			"settings":
+			{
+				"buffer_size": 277,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "scss/30-global/_sidebar.scss",
 			"settings":
 			{
-				"buffer_size": 406,
+				"buffer_size": 1869,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/60-pages/home/_home.scss",
+			"settings":
+			{
+				"buffer_size": 3694,
 				"line_ending": "Unix"
 			}
 		},
@@ -744,6 +832,7 @@
 	],
 	"file_history":
 	[
+		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/node_modules/bourbon/app/assets/stylesheets/addons/_buttons.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/template-parts/content-single.php",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/00-config/_fonts.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/comments.php",
@@ -810,7 +899,6 @@
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/grunt-tasks/pattern-lab/pattern-lab.js",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/pattern-lab-assets.yml",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/60-pages/_styleguide-specific.scss",
-		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/node_modules/bourbon/app/assets/stylesheets/addons/_buttons.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_alerts.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/node_modules/singularitygs/stylesheets/singularitygs/helpers/_layout.scss",
 		"/Users/administrator/vvv-5.5/www/es/htdocs/wp-content/themes/epic-scan/scss/40-components/_node-teaser.scss",
@@ -926,6 +1014,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"categor",
 			"epic_scan_entry_footer",
 			"get_search_form",
 			"content-area container",
@@ -1052,8 +1141,7 @@
 			"68, 78",
 			".page-template-default",
 			"product_line",
-			"product line",
-			"<?php echo $background; ?>"
+			"product line"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1130,7 +1218,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -1152,6 +1240,7 @@
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1159,7 +1248,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
@@ -1168,15 +1257,195 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1923,
+						"buffer_size": 2109,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								535,
-								535
+								1331,
+								1331
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scss/00-config/_fonts.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								401,
+								401
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scss/00-config/_icons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1174,
+								1174
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/00-config/_colors.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								428,
+								428
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "pattern-lab/core/source/_patterns/00-atoms/06-buttons/00-buttons.mustache",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								209,
+								209
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/HTML Mustache/Syntaxes/HTMLMustache.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scss/40-components/_btn.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2190,
+								2190
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"history_list_is_closing": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 974.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "front-page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2882,
+								2882
 							]
 						],
 						"settings":
@@ -1184,15 +1453,45 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 92.0,
+						"translation.x": 79.0,
+						"translation.y": 1629.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 8,
+					"file": "archive-project.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								243,
+								243
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "template-parts/content.php",
 					"semi_transient": false,
 					"settings":
@@ -1210,6 +1509,7 @@
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1217,17 +1517,17 @@
 						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 15,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 10,
 					"file": "scss/30-global/_html-elements.scss",
 					"semi_transient": false,
 					"settings":
@@ -1249,14 +1549,14 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 11,
 					"file": "scss/40-components/_comments.scss",
 					"semi_transient": false,
 					"settings":
@@ -1282,11 +1582,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 12,
 					"file": "scss/30-global/_main-section.scss",
 					"semi_transient": false,
 					"settings":
@@ -1312,11 +1612,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 13,
 					"file": "scss/30-global/_site-content.scss",
 					"semi_transient": false,
 					"settings":
@@ -1328,53 +1628,207 @@
 						"selection":
 						[
 							[
-								200,
-								200
+								232,
+								232
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "scss/30-global/_sidebar.scss",
+					"buffer": 14,
+					"file": "functions.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 406,
+						"buffer_size": 7811,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								391,
-								391
+								7590,
+								7811
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3086.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "scss/30-global/_header.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 965,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								250,
+								250
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 16,
+					"file": "sidebar.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "scss/30-global/_sidebar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								742,
+								742
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"history_list_is_closing": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 275.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "scss/60-pages/home/_home.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1885,
+								1885
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1192.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scss/40-components/_btn.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1925,
+								1925
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"history_list_is_closing": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 834.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
 					"file": "scss/50-templates/_post.scss",
 					"semi_transient": false,
 					"settings":
@@ -1400,11 +1854,11 @@
 						"translation.y": 688.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 20,
 					"file": "scss/40-components/_category-nav.scss",
 					"semi_transient": false,
 					"settings":
@@ -1430,7 +1884,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 18,
 					"type": "text"
 				}
 			]
@@ -1500,12 +1954,76 @@
 		"selected_items":
 		[
 			[
-				"content",
-				"epic-scan/template-parts/content.php"
+				"",
+				"epic-scan/functions.php"
 			],
 			[
-				"",
-				"epic-scan/template-parts/content-single.php"
+				"_header",
+				"epic-scan/scss/30-global/_header.scss"
+			],
+			[
+				"func",
+				"epic-scan/functions.php"
+			],
+			[
+				"_home",
+				"epic-scan/scss/60-pages/home/_home.scss"
+			],
+			[
+				"_btn",
+				"epic-scan/scss/40-components/_btn.scss"
+			],
+			[
+				"front",
+				"epic-scan/front-page.php"
+			],
+			[
+				"fucn",
+				"epic-scan/functions.php"
+			],
+			[
+				"_butt",
+				"epic-scan/pattern-lab/core/source/_patterns/00-atoms/06-buttons/00-buttons.mustache"
+			],
+			[
+				"_button",
+				"epic-scan/node_modules/bourbon/app/assets/stylesheets/addons/_buttons.scss"
+			],
+			[
+				"_color",
+				"epic-scan/scss/00-config/_colors.scss"
+			],
+			[
+				"_icon",
+				"epic-scan/scss/00-config/_icons.scss"
+			],
+			[
+				"_fonts",
+				"epic-scan/scss/00-config/_fonts.scss"
+			],
+			[
+				"_colo",
+				"epic-scan/scss/00-config/_colors.scss"
+			],
+			[
+				"_fon",
+				"epic-scan/scss/00-config/_fonts.scss"
+			],
+			[
+				"_side",
+				"epic-scan/scss/30-global/_sidebar.scss"
+			],
+			[
+				"side",
+				"epic-scan/sidebar.php"
+			],
+			[
+				"proj",
+				"epic-scan/archive-project.php"
+			],
+			[
+				"content",
+				"epic-scan/template-parts/content.php"
 			],
 			[
 				"arch",
@@ -1544,10 +2062,6 @@
 				"epic-scan/category.php"
 			],
 			[
-				"func",
-				"epic-scan/functions.php"
-			],
-			[
 				"search",
 				"epic-scan/search.php"
 			],
@@ -1556,16 +2070,8 @@
 				"epic-scan/template-parts/content-none.php"
 			],
 			[
-				"side",
-				"epic-scan/sidebar.php"
-			],
-			[
 				"content-search",
 				"epic-scan/template-parts/content-search.php"
-			],
-			[
-				"_side",
-				"epic-scan/scss/30-global/_sidebar.scss"
 			],
 			[
 				"404",
@@ -1614,10 +2120,6 @@
 			[
 				"_comment",
 				"scss/40-components/_comments.scss"
-			],
-			[
-				"_btn",
-				"scss/40-components/_btn.scss"
 			],
 			[
 				"comments",
@@ -1684,10 +2186,6 @@
 				"template-parts/content.php"
 			],
 			[
-				"_header",
-				"scss/30-global/_header.scss"
-			],
-			[
 				"_z",
 				"scss/00-config/_z-index.scss"
 			],
@@ -1704,10 +2202,6 @@
 				"scss/00-config/_utilities.scss"
 			],
 			[
-				"front",
-				"front-page.php"
-			],
-			[
 				"_serv",
 				"scss/60-pages/services/_services.scss"
 			],
@@ -1722,10 +2216,6 @@
 			[
 				"ser",
 				"services.php"
-			],
-			[
-				"_home",
-				"scss/60-pages/home/_home.scss"
 			],
 			[
 				"_typ",
@@ -1746,14 +2236,6 @@
 			[
 				"_icons",
 				"scss/10-base/_icons-base.scss"
-			],
-			[
-				"_icon",
-				"scss/00-config/_icons.scss"
-			],
-			[
-				"_color",
-				"scss/00-config/_colors.scss"
 			],
 			[
 				"_footer",
@@ -1798,10 +2280,6 @@
 			[
 				"front-",
 				"front-page.php"
-			],
-			[
-				"_colo",
-				"scss/00-config/_colors.scss"
 			],
 			[
 				"home-her",
@@ -1850,10 +2328,6 @@
 			[
 				"_node-teas",
 				"scss/40-components/_node-teaser.scss"
-			],
-			[
-				"_fonts",
-				"scss/00-config/_fonts.scss"
 			],
 			[
 				"_pri",
@@ -1990,26 +2464,6 @@
 			[
 				"icons",
 				"docs/icons.md"
-			],
-			[
-				"web",
-				"docs/web-typography.md"
-			],
-			[
-				"util",
-				"docs/utilities.md"
-			],
-			[
-				"scaff",
-				"docs/scaffolding.md"
-			],
-			[
-				"guide",
-				"docs/guidelines.md"
-			],
-			[
-				"layou",
-				"docs/layout.md"
 			]
 		],
 		"width": 0.0
@@ -2032,7 +2486,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 		"xdebug":

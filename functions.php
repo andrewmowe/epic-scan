@@ -246,8 +246,6 @@ add_filter('excerpt_more', 'new_excerpt_more');
  * Don't show Private projects to anyone not explicitly given permission
  */
 // function exclude_private_projects( $query ) {
-// 	global $query;
-
 // 	if ( 'project' === $query->query_vars( 'post_type' ) ) {
 		
 // 		if ( is_user_logged_in() ) {
@@ -259,3 +257,14 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // }
 // add_action( 'pre_get_posts', 'exclude_private_projects' );
 
+/**
+ * Include Projects in blogrolls
+ */
+// function include_projects( $query ) {
+// 	if ( is_home() || is_archive() && is_main_query() ) {
+
+// 		$query->set( 'post_type', array('post', 'project') );
+
+// 	}
+// }
+// add_action( 'pre_get_posts', 'include_projects' );
