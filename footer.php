@@ -51,9 +51,15 @@
 
 				<div class="footer-social-links">
 					
-					<a href="<?php echo get_field('facebook', 'option'); ?>" class="facebook-text-replace">Twitter</a>
-					<a href="<?php echo get_field('twitter', 'option'); ?>" class="twitter-text-replace">Twitter</a>
-					<a href="<?php echo get_field('linkedin', 'option'); ?>" class="linkedin-text-replace">Twitter</a>
+					<?php if ( get_field('facebook', 'option') ) : ?>
+						<a href="<?php echo get_field('facebook', 'option'); ?>" class="facebook-text-replace">Facebook</a>
+					<?php endif; ?>
+					<?php if ( get_field('twitter', 'option') ) : ?>
+						<a href="<?php echo get_field('twitter', 'option'); ?>" class="twitter-text-replace">Twitter</a>
+					<?php endif; ?>
+					<?php if ( get_field('twitter', 'option') ) : ?>
+						<a href="<?php echo get_field('linkedin', 'option'); ?>" class="linkedin-text-replace">LinkedIn</a>
+					<?php endif; ?>
 
 				</div>
 

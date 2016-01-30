@@ -9,7 +9,6 @@
 	}
 
 .about-team {
-	background-color: $viking;
 	padding-top: 5%;
 	padding-bottom: 6%;
 
@@ -23,88 +22,50 @@
 	}
 }
 
-	.team-member {
-		text-align: center;
-		margin-bottom: 1em;
+	.team-members {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
 
-		@include breakpoint($bp-md) {
-			@include clearfix;
-			text-align: left;
+	.team-member {
+		margin-bottom: 1em;
+		position: relative;
+		@include aspect-ratio(4, 3);
+
+		@include breakpoint($bp-lg) {
+			width: span(4);
 			margin-bottom: 2em;
 		}
 	}
 
 		.team-member-headshot {
-			display: inline-block;
-			border: 10px solid $gray-dark;
-			border-radius: 50%;
+			max-width: none;
+			float: left;
+			height: 100%;
+			width: auto;
 			margin-bottom: 1em;
 
 			@include breakpoint($bp-md) {
-				@include span(2);
-				margin-top: -5%;
 			}
 		}
 
 		.team-member-info {
-			position: relative;
-
-			@include breakpoint($bp-md) {
-				@include span(10 last);
-			}
+			width: 100%;
+			margin-top: 1em;
 		}
 
 			.team-member-name {
-				padding: 8px 18px 4px;
-				font-size: $font-23;
-				color: $white;
-				background-color: $gray-dark;
+				font-size: $font-16;
 				text-transform: uppercase;
-				display: inline-block;
-				margin-bottom: 1em;
-
-				@include breakpoint($bp-md) {
-					display: inline-block;
-					vertical-align: middle;
-					margin-bottom: 0;
-				}
+				display: block;
+				line-height: 1;
 			}
 
-			.team-member-contact {
-				margin-bottom: 1em;
-
-				@include breakpoint($bp-md) {
-					display: inline-block;
-					vertical-align: middle;
-					margin-bottom: 0;
-				}
-
-				a {
-					color: $gray-dark;
-					display: inline-block;
-					margin: 0 0.5em;
-					font-size: $font-23;
-
-					&:hover {
-						color: darken($gray-dark, 10%);
-						text-decoration: none;
-					}
-				}
+			.team-member-title {
+				font-size: $font-16;
+				line-height: 1;
 			}
-
-			.team-member-bio {
-				text-align: left;
-				max-width: 700px;
-
-				@include breakpoint($bp-md) {
-					padding-top: 1em;
-					padding-left: 1em;
-				}
-			}
-
-				.team-member-title {
-					font-size: $font-23;
-				}
 
 .project-cta {
 	background-color: $gray-dark;

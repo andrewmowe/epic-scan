@@ -8,6 +8,15 @@
 	h2 {
 		color: $gray-dark;
 	}
+
+	label {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	button {
+		padding: 7px 30px 8px;
+	}
 }
 
 // Footer proper

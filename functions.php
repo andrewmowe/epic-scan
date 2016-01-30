@@ -260,11 +260,22 @@ add_filter('excerpt_more', 'new_excerpt_more');
 /**
  * Include Projects in blogrolls
  */
-// function include_projects( $query ) {
-// 	if ( is_home() || is_archive() && is_main_query() ) {
+function es_include_projects( $query ) {
+	if ( $query->is_main_query() ) {
 
-// 		$query->set( 'post_type', array('post', 'project') );
+		if ( $query->is_home() && $query->is_front_page() ) {
+			// Default homepage
+		} elseif ( $query->is_front_page() ) {
+			// Static homepage
+		} elseif ( $query->is_home() ) {
 
-// 	}
-// }
-// add_action( 'pre_get_posts', 'include_projects' );
+			$query->set( 'post_type', array('post', 'project') );
+
+		} else {
+			// Neither
+		}
+
+	}
+}
+add_action( 'pre_get_posts', 'es_include_projects' );
+

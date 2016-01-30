@@ -49,12 +49,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-			<section class="news-alert">
-				<div class="container">
-					<a href="#" class="btn alert-btn">News</a>
-					<a href="#" class="alert-link">How today’s architects are using Holo Lens to move ahead.</a>
-				</div>
-			</section>
+		<?php get_template_part( '/template-parts/news-banner' ); ?>
 
 		<?php if(get_field('about_text') ) :
 
@@ -79,8 +74,12 @@ get_header(); ?>
 
 		<?php
 		$team_members = get_users( array(
-				'meta-key' => 'user-type',
-				'meta-value' => 'team-member'
+				'orderby' => 'meta_value',
+				'meta_key' => 'team_member_order',
+				'meta_query' => array(
+						'key' => 'user_type',
+						'value' => 'team'
+					)
 			));
 		if ( $team_members ) : ?>
 
@@ -90,6 +89,8 @@ get_header(); ?>
 					
 					<h2 class="center">The Epic Scan Team</h2>
 
+					<div class="team-members">
+
 					<?php foreach( $team_members as $member ) :
 
 					// print_r($member);
@@ -97,83 +98,52 @@ get_header(); ?>
 						// vars
 						$u_id = $member->ID;
 						$id = 'user_' . $u_id;
+						$user_type = get_field('user_type', $id);
 						$name = $member->display_name;
+						$slug = $member->user_nicename;
 						$title = get_field('user_title', $id);
-						$bio = get_field('user_bio', $id);
-						$edu = get_field('user_education', $id);
-						$email = get_field('user_public_email', $id);
-						$linkedin = get_field('user_linkedin', $id);
-						$twitter = get_field('user_twitter', $id);
 
 						// image
 						$image_id = get_field('user_image', $id);
-						$image = wp_get_attachment_image_src($image_id, 'thumbnail');
+						$image = wp_get_attachment_image_src($image_id, 'medium');
 						$image_url = $image[0];
 						$image_w = $image[1];
 						$image_h = $image[2];
 						$image_alt = $image[3];
 						?>
 
+						<?php if ( $user_type != 'team' ) :
+
+							// Do nothing
+
+						else :
+
+							// Display Team Member
+						?>
+
 						<div class="team-member">
 							
-							<img class="team-member-headshot" src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
+							<div class="content">
+								
+								<img class="team-member-headshot" src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
+								
+							</div>
 
 							<div class="team-member-info">
-
-								<span class="team-member-name"><?php echo $name; ?></span>
-
-								<div class="team-member-contact">
-									
-									<?php if($email) : ?>
-										<a href="mailto:<?php echo $email; ?>" class="fa fa-envelope"></a>
-									<?php endif; ?>
-
-									<?php if($linkedin) : ?>
-										<a href="<?php echo $linkedin; ?>" class="fa fa-linkedin"></a>
-									<?php endif; ?>
-
-									<?php if($twitter) : ?>
-										<a href="<?php echo $twitter; ?>" class="fa fa-twitter"></a>
-									<?php endif; ?>
-
-								</div>
-
-								<div class="team-member-bio">
-									
-									<span class="team-member-title"><?php echo $title; ?></span>
-
-									<?php if($bio) : ?>
-										<?php echo apply_filters('the_content', $bio); ?>
-									<?php endif; ?>
-
-									<?php if( have_rows( 'user_specialties', $id ) ) : ?>
-
-										<strong>Specialties</strong>
-
-										<ul>
-
-										<?php while( have_rows( 'user_specialties', $id ) ) : the_row(); ?>
-
-											<li><?php the_sub_field('user_specialty'); ?></li>
-
-										<?php endwhile; ?>
-
-										</ul>
-
-									<?php endif; ?>
-
-									<?php if($edu) : ?>
-										<strong>Education</strong>
-										<?php echo apply_filters('the_content', $edu); ?>
-									<?php endif; ?>
-
-								</div>
-
+							
+								<a href="<?php echo esc_url( home_url( '/author/' ) . $slug ); ?>" class="team-member-name"><?php echo $name; ?></a>
+							
+								<span class="team-member-title"><?php echo $title; ?></span>
+							
 							</div>
 
 						</div>
 
+						<?php endif; ?>
+
 					<?php endforeach; ?>
+
+					</div>
 						
 				</div>
 

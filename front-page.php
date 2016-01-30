@@ -37,7 +37,7 @@ get_header(); ?>
 
 						<p class="hero-text"><?php the_field('home_hero_text'); ?></p>
 
-						<a href="#" class="hero-learn-more">Learn more</a>
+						<a href="/services" class="btn btn-secondary">Learn more</a>
 
 					</div>
 
@@ -51,12 +51,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-			<section class="news-alert">
-				<div class="container">
-					<a href="#" class="btn alert-btn">News</a>
-					<a href="#" class="alert-link">How today’s architects are using Holo Lens to move ahead.</a>
-				</div>
-			</section>
+		<?php get_template_part( '/template-parts/news-banner' ); ?>
 
 		<?php if(get_field('home_cta_text') ) : ?>
 
@@ -90,7 +85,8 @@ get_header(); ?>
 
 						// vars
 						$client_title = get_sub_field('client_title');
-						$client_link = get_sub_field('client_link');
+						$client_term = get_sub_field('client_link');
+						$client_link = get_term_link( $client_term[0] );
 						$client_image = get_sub_field('client_thumbnail');
 
 						// image
@@ -127,7 +123,7 @@ get_header(); ?>
 					<h2>What our clients say</h2>
 
 					<div class="testimonial-list js-flickity"
-						data-flickity-options='{ "prevNextButtons": false, "autoPlay": true }'>
+						data-flickity-options='{ "prevNextButtons": false, "autoPlay": 8000, "imagesLoaded": true }'>
 
 					<?php while( have_rows( 'home_testimonials' ) ) : the_row(); ?>
 

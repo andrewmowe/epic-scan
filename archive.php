@@ -28,8 +28,7 @@ get_header(); ?>
 
 					else :
 
-						the_archive_title( '<h1 class="blog-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						echo '<h1 class="blog-title">Projects</h1>';
 
 					endif;
 				?>

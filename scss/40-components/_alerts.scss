@@ -30,6 +30,8 @@
 	.alert-link {
 		color: $white;
 		text-transform: uppercase;
+		text-align: left;
+		max-width: 800px;
 
 		&:hover {
 			color: $white;
